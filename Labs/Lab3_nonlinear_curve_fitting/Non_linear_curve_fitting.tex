@@ -1,0 +1,107 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+%%For Table perhaps%%
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+%\usepackage{tabularx,ragged2e,booktabs,caption}
+%\newcolumntype{C}[1]{>{\Centering}m{#1}}
+%\renewcommand\tabularxcolumn[1]{C{#1}}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+\frenchspacing
+
+\title {\textbf{Lab 3 -- Nonlinear Curve Fitting}} 
+
+\author {Deborah Sills}
+%\date {9 February 2013}
+\maketitle
+\section *{Learning Objectives}
+\begin{enumerate}
+
+\item Learn to fit laboratory data to mathematical models using non-linear curve fitting.\
+\item Create, discuss, and analyze figures that clearly present data and model fits.\
+\item Communicate the results of a preliminary laboratory study in a semi-formal memo.\ 
+\end{enumerate}
+
+\section *{Rationale}
+\begin{enumerate}
+\item Environmental engineers use mathematical models that describe phenomena---such as aeration of an activated sludge reactor---to design treatment technologies.  Thus far you have used linear models (easy to do in Excel), but many phenomena are not linear, and linearizing non-linear data has drawbacks, including blah balh.  Many computer programs (e.g., Matlab, R, KaleidaGraph, SigmaPlot) include non-linear curve fitting packages and today we will use KaleidaGraph.  
+\item To be successful, engineers need to communicate results of preliminary experiments and final designs clearly and concisely to their colleagues, supervisors, and clients.
+\end{enumerate}
+ 
+
+\section *{Exercise 1--Sorption}
+
+%\subsection {Background}
+%\subsection {Problem Description}
+
+
+The influent water to a drinking water plant in Ames, Iowa is contaminated with the pesticide chlordane.  The plant operator has contracted the firm you work for to design a  process to remove chlordane from the water . The firm is considering designing a treatment process that uses granulated activated carbon (GAC).\\
+
+You are part of a team that has been asked to asses whether treating the water with GAC will reduce chlordane concentrations sufficiently. Your supervisor has asked you and the other new engineer in the firm to conduct a set of experiments to determine the parameters for the sorption isotherm of chlordane on GAC.  The model  parameters will be used to design a bench-scale treatment unit that will be further tested.\\
+
+Your colleague has collected the data, and you now have to fit the data to the Langmuir and Freundlich isotherms (see Eq. 1 and Eq. 2) and report the parameters of the model.  
+
+\subsection *{Mechanics--what you need to do}
+
+%A file titled ``Sorption$_$Data'' with the experimental data is located in the following directory cccbbb.
+
+You assignment is to fit the   
+Report the parameters to Mr. Hayes in a short memo that includes the following sections: objective, methods, and results \& discussion, where you will present and discuss your figures. Since this is a preliminary laboratory study you do not need to include introduction and conclusion sections.
+
+\subsection *{Deliverables}
+%\begin{enumerate}
+%\item 
+%\item 
+%\end{enumerate}
+
+
+\section *{Exercise 2--Aeration}
+
+Bioprocess Algae is designing a CO$_2$ delivery system for their new raceway ponds used to grow microalgae that will be converted into jet fuel. Since the cost of delivering CO$_2$ to raceway ponds represents about one-third of the total cost of growing algae for fuel production (cite Lundquist et al. 2011 here), a well designed delivery system is critical for Bioprocess Algae to be successful. 
+
+They have asked your firm to conduct a laboratory study that will determine the effect of three following designs  on the rate of CO$_2$ input into the ponds: (1) mixing only, (2) CO$_2$ gas delivery with a fine (small) diameter diffuser (D = 4 um), and (3) CO$_2$ gas delivery with a coarse (large) diameter diffuser (D = 8 cm).
+
+\subsection *{Mechanics--or what you need to do}
+The data file is located at %/ facultystaff on ‘netspace’ (T:)/dls054/public/CENG340/Week5_LabFiles/.
+The Excel file in that directory has three tabs, described as follows:
+\begin{itemize}
+
+\item Tab 1: “Exercise 1 – CO$_2$ Delivery”  This tab has three sets of CO$_2$ concentration versus time data from an open raceway pond, where  CO$_2$ was delivered via three methods:
+
+\begin{enumerate}
+
+\item mixing only, 
+\item sparging with coarse (large) bubbles, and 
+\item sparging with fine (small) bubbles.
+\end{enumerate} 
+\item Your assignment is to fit the three-parameter (C$_sat$, C$_0$, and k) non-linear mass transfer equation that we learned in lab last week, to each data set.
+\end{itemize}
+
+\subsection *{Deliverables}
+\begin{enumerate}
+\item One plot showing all three sets of C vs. t data points, and a line/curve that illustrates the model fit to each data set.
+A column graph with three columns, showing the value of the mass transfer coefficient (k) on the y-axis that corresponds to each aeration method on the x-axis.
+\item A short memo to your boss that includes the following sections:  In this case you must discuss the significance of the results blah blah
+\end{enumerate}
+
+
+
+
+\section *{Exercise 3 - Monod Kinetics}
+
+
+
+
+\end{document}
