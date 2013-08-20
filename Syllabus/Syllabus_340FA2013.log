@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  17 AUG 2013 11:44
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  19 AUG 2013 08:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -936,7 +936,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen173
 \Gm@dimlist=\toks64
 )
-No file Syllabus_340FA2013.aux.
+(./Syllabus_340FA2013.aux)
 \openout1 = `Syllabus_340FA2013.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -951,6 +951,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
+
 (/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count295
@@ -1114,17 +1115,17 @@ Non-PDF special ignored!
 {/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
 Syllabus_340FA2013.aux) ) 
 Here is how much of TeX's memory you used:
- 12899 strings out of 493633
- 253895 string characters out of 3143378
+ 12901 strings out of 493633
+ 253941 string characters out of 3143378
  267860 words of memory out of 3000000
  15970 multiletter control sequences out of 15000+200000
  15539 words of font info for 61 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 45i,6n,40p,770b,187s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,6n,40p,981b,187s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr12.pfb>
-Output written on Syllabus_340FA2013.pdf (2 pages, 36573 bytes).
+Output written on Syllabus_340FA2013.pdf (2 pages, 37422 bytes).
 PDF statistics:
  19 PDF objects out of 1000 (max. 8388607)
  12 compressed objects within 1 object stream
