@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  20 AUG 2013 01:13
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  20 AUG 2013 08:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1102,6 +1102,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
 [3] (./Non_linear_curvefitting_2.aux) ) 
 Here is how much of TeX's memory you used:
  12755 strings out of 493633
@@ -1110,7 +1115,7 @@ Here is how much of TeX's memory you used:
  15833 multiletter control sequences out of 15000+200000
  17608 words of font info for 69 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 45i,6n,40p,545b,232s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,6n,40p,606b,232s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/font
 s/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2011/texmf-dist/fonts/
@@ -1121,7 +1126,7 @@ public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmti12.pfb>
-Output written on Non_linear_curvefitting_2.pdf (3 pages, 94068 bytes).
+Output written on Non_linear_curvefitting_2.pdf (3 pages, 94703 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
