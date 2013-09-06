@@ -1,0 +1,37 @@
+Quiz 1 distribution
+========================================================
+Before starting an R session, you must call up the R-packages needed for your analysis.
+
+```{r}
+library(plyr)
+library(ggplot2)
+```
+
+Set working directory
+```{r}
+setwd("/Users/Deborah/desktop/CENG340/grade_dist")
+
+```
+
+Read in data
+```{r}
+#To import data
+abc <- read.table('quiz1.csv', header=FALSE, sep=',')
+colnames(abc)<- "grades"
+```
+
+I also looked at the data to make sure it was input correctly.
+
+```{r}
+abc
+```
+
+Plot prob density
+
+```{r fig.width=5.5, fig.height=4.5}
+ggplot(abc, aes(x=grades)) + geom_histogram(fill = "#CC0000") +
+  theme(legend.position = "none") +
+  theme(axis.text.y = element_text(size = 18, color = "black"),axis.text.x = element_text(size = 20, color = "black"),axis.title.x = element_text(size=20), axis.title.y = element_text(size = 20)) +
+  labs(x = "Quizz Grade (out of 10)", y = "\nNumber of Students")
+```
+
