@@ -1,0 +1,150 @@
+\documentclass[12pt,letterpaper]{article}
+%\documentstyle[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+%%For Table perhaps%%
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+%\newcolumntype{C}[1]{>{\Centering}m{#1}}
+\renewcommand\tabularxcolumn[1]{C{#1}}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{subcaption} 
+\usepackage{caption}
+\usepackage[colorlinks]{hyperref}
+\usepackage[svgnames]{xcolor}
+\hypersetup{citecolor=DeepPink4}
+\hypersetup{linkcolor=DarkRed}
+\hypersetup{urlcolor=DarkBlue}
+\usepackage{cleveref}
+\usepackage{enumerate}
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+\frenchspacing
+
+\title {Problem Set 2} 
+\author {CENG 340--Introduction to Environmental Engineering\\
+Instructor: Deborah Sills}
+\date {September 9, 2013}
+\maketitle
+
+\section *{Due Date}
+Wednesday 18 September, in class.
+
+\section *{Learning Goals}
+\begin{enumerate}
+\item Calculate chemical concentrations in units of mass/mass, mass/volume, mole/volume, mole/mole, volume/volume, ppm$_v$, ppm$_m$, and partial pressure.
+\item Describe and quantify physical characteristics of water (e.g., turbidity and solids concentrations).
+\item Write balanced chemical reactions and use these to calculate chemical transformations of one compound to another.
+\item Apply equilibrium relationships to calculate chemical concentrations of pollutants in air and water.
+\item Apply kinetic equations to determine reaction times.
+\end{enumerate}
+
+
+\section *{Questions}
+\begin{enumerate}
+\item \textbf{6 points} (Modified from \emph{Environmental Engineering}, by MacKenzie and Cornwell)\\
+In 2001,the U.S. Environmental Protection Agency mandated a new standard MCL for arsenic in drinking water.  The standard is now 10 parts per billion (ppb$_m$). 
+\begin{enumerate}[a)]
+\item What is the MCL of arsenic in units of mg/L, $\mu$g/L, mmoles/L, , and nmole/L.
+\item Why is arsenic considered a human health hazard? (hint: read Ch. 10.1--10.3)
+\item In what parts of the world has arsenic been detected in drinking water?(hint: read Ch. 10.1--10.3)
+\end{enumerate}
+
+\item 
+\textbf{3 points} Explain the word turbidity in words that the mayor of Lewisburg (or mayor of any community) could understand?
+
+\item \textbf{16 points} (Adapted from \emph{Environmental Engineering}, by B. Ray)\\
+An aqueous suspension is formed by combining the materials shown in the following table.  
+
+\begin{minipage}{\linewidth}
+\centering
+\captionof{table}{Composition of aqueous suspension} \label{tab:title}
+
+\begin{tabular}{|c|c|c|p{3.1cm}|}\toprule[1.25pt]
+\bf Compound	& \bf Concentration (mg/L)	& \bf Dissolves 	& \bf Volatalizes or burns at 550 $^0$C \\\midrule
+Sodium chloride	& 45 	& Yes & No\\ \hline
+Calcium sulfate	& 30 	& Yes	& No\\ \hline
+Clay & 100	& No 	& No \\  \hline
+Copper chloride & 10 	& Yes & No \\  \hline
+Acetic acid	& 20 & Yes & Yes\\		\hline
+Coffee grounds	& 25 	& No & Yes \\		\hline
+\bottomrule[1.25pt]
+
+\end {tabular}\par
+\end{minipage}\\
+
+(a) Determine the total solids (TS), total dissolved solids (TDS), total suspended solids (TSS), volatile suspended solids (VSS), and fixed dissolved solids (FDS) of the suspension.\\
+
+(b) Explain why inorganic compounds such as MgCO$_3$, that are unstable when exposed to heat (e.g., 550 $^0$C), can introduce an error in the measurement of volatile solids. 
+
+
+\item \textbf{16 points}  Researchers who study microbial degradation of vinyl chloride (VC) use small sealed glass bottles to keep VC from partitioning into the room air during experiments.  Once, while I was working in a lab, a new Masters students walked up to me to show me that her sealed bottle was open (true story). Before the seal broke the bottle contained 3 mg of vinyl chloride in 60 mL of water.\\
+
+Assume the volume of air in the lab equaled 100 m$^3$ and that there was no ventilation (luckily that was not true), the temperature and pressure in the lab were 25 $^0$C and 1 atm, respectively. In addition the log of the dimensionless Henry's Law Constant equals 0.04 (log$K_H$ = 0.04). %$\mathrm{\frac{m^3\times atm}{mole}}$ 
+
+\begin{enumerate}[a)]
+\item Compare the equilibrium concentration of VC in the air to the 3-h air quality standard of [VC]$_{std}$ = 10 ppm$_v$.
+\item What should the new Masters student have done, when she noticed the seal on the bottle that contained VC was open?
+\end{enumerate}
+
+
+\item \textbf{16 points} 
+Open raceway ponds used to cultivate algae for biofuel production include carbonation systems that bubble CO$_2$ into the ponds.  Carbonation systems are needed, because the concentration of dissolved CO$_2$ in surface water is not high enough to sustain rapid growth of algae.  And rapid growth of algae is critical for commercializing this technology.  The first step in designing carbonation systems is to calculate the equilibrium concentration of aqueous CO$_2$.
+
+\begin{enumerate}[a)]
+\item Calculate the concentration of of dissolved CO$_2$ (in units of moles/L and mg/L) in surface water equilibrated with the atmosphere at 20 $^0$C.  The Henry's law constant for CO$_2$ at 20 $^0$C is 29.4  $\mathrm{\frac{L\times atm}{mole}}$.
+%What would be the saturation concentration (mole/L) of oxygen (O$_2$) in a river in winter when the air temperature is $2.28 \times 10^{-3}$  $\mathrm{\frac{mole}{L\times atm}}$
+\item \emph{Related Carbonate Chemistry} Henry's law dictates that as the concentration of atmospheric CO$_2$ increases, so does the concentration of aqueous CO$_2$ in surface water.  How does increased [CO$_2$]$_{(aq)}$ affect pH? 
+\end{enumerate}
+
+\item \textbf{15 points}  A tanker truck carrying ethanol has a crash and spills 500 lbs of ethanol into a river adjacent to the road.  The good news is that if enough oxygen is available, all of the ethanol will be biodegraded by native aerobic microbes in the river.  The unbalanced chemical reaction is:
+
+\begin{align*}
+\cee{C_2H_5OH}\,  + \,  O_2\, \rightarrow \, CO_2 \, + \,  H_2O
+\end{align*}
+
+If all of the ethanol in the river is biodegraded,
+\begin{enumerate}[a)]
+\item How many kg of oxygen are needed?
+\item How many kg of CO$_2$ are produced?
+\item How many cubic meters of CO$_2$ are produced at 1 atm and 30 $^0$C?\\
+
+\end{enumerate}
+
+\item \textbf{16 points}  Acid-Base Chemistry
+\begin{enumerate}[a)]
+\item What is the pH of of a 100 mL solution with 10 mg/L of sulfuric acid (H$_2$SO$_4$)?  
+\item What is the normality of the sulfuric acid solution (note that 1 normal (N) equals 1 eq/L)?  
+\item What volume of a bicarbonate (HCO$_3^-$) solution with a concentration of 90 mg/L of alkalinity as CaCO3 would you need to neutralize the sulfuric acid solution?
+\end{enumerate}
+
+\item \textbf{12 points}  (From Mihelcic and Zimmerman)
+A first-order reaction that results in the destruction of a pollutant has a rate constant of 0.1 /day.
+\begin{enumerate}[a)]
+\item How many days will it take for 90 percent of the chemical to be destroyed?
+\item How long will it take for 99 percent of the chemical to be destroyed?
+\item How long will it take for 99.9 percent of the chemical to be destroyed?
+
+ \end{enumerate}
+
+
+
+
+
+%\item A gasoline station has a patch of contaminated soil over a 45 m$^2$ area and 0.5 m deep. Any samples that exceed Total Petroleum Hydrocarbons (TPH) of 50 mg/kg will require a complete remediation of all soil. If the soil bulk density is 1.5 g/cm$^3$, what is the maximum total mass (in kg) of TPH that may remain on site without cleanup?
+
+
+
+\end{enumerate}
+
+\end{document}
