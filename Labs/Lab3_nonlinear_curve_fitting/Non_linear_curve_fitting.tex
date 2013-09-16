@@ -15,10 +15,10 @@
 %\newcolumntype{C}[1]{>{\Centering}m{#1}}
 %\renewcommand\tabularxcolumn[1]{C{#1}}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
-%\usepackage{subcaption} 
-%\usepackage{caption}
-\usepackage{siunitx}
-\usepackage{subfig}
+\usepackage{subcaption} 
+\usepackage{caption}
+%\usepackage{siunitx}
+%\usepackage{subfig}
 
 
 
@@ -62,85 +62,34 @@ Instructor: Deborah Sills}
 
 \section *{Rationale}
 \begin{enumerate}
-\item Environmental engineers use mathematical models that describe phenomena---such as aeration of an activated sludge reactor---to design treatment technologies.  Thus far you have used linear models (easy to do in Excel), but many phenomena are not linear, and linearizing non-linear data results in less accurate models.  Many computer programs (e.g., Matlab, R, KaleidaGraph, SigmaPlot) include non-linear curve fitting packages and today we will use KaleidaGraph.  
+\item Environmental engineers use mathematical models that describe phenomena---such as oxygen depletion during biodegradation of organic matter---to design treatment technologies.  Thus far you have used linear models (easy to do in Excel), but many phenomena are not linear, and linearizing non-linear data results in less accurate models.  Many computer programs (e.g., Matlab, R, KaleidaGraph, SigmaPlot) include non-linear curve fitting packages and today we will use KaleidaGraph.  
 \item To be successful, engineers need to communicate results of preliminary experiments and final designs clearly and concisely to their colleagues, supervisors, and clients.  Such communications often include figures that contain graphs.  In addition to creating clear and effective figures, engineers need to discuss and analyze their figures appropriately. 
 \end{enumerate}
  
-\section *{In Class Preparatory Exercise: Figures--the good and the not so good}
-The following two figures are taken from a document created by Prof. Malusis, called \emph{DOs and DON’Ts for Creating High-Quality Figures that Contain Graphs}.   (You will receive a copy of this document after we complete this exercise).  Both figures show the same data and model fits, but the graphs were created with different software packages and were formatted differently.\\
-
-\pagebreak
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=1\textwidth]{soil_good_bad}
-%\label{fig:awesome_image}
-%\end{figure}
-
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=0.6\textwidth]{Soil_good}
-%\caption{Measured water retention curves for clay soil and a geosynthetic drainage net (GDN).  Circles represent data points and lines represent fitted models.}
-%\end{figure}
-%
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=0.6\textwidth]{Soil_notsogood}
-%\end{figure}
-
-%\pagebreak
-
-%\begin{figure}[t]
-%  \begin{minipage}{0.5\linewidth}
-%  
-%    \includegraphics[width=1.2\textwidth]{Soil_good}
-%    \caption{Measured water retention curves for clay soil and a geosynthetic drainage net (GDN). Circles represent data points and lines represent fitted models.}
-%    \label{fig_good}
-%  \end{minipage}%
-%  \begin{minipage}{0.5\linewidth}
-%    \includegraphics[width=1.2\textwidth]{Soil_notsogood}
-%    \caption{The caption for figure 2.}
-%    \label{fig_bad}
-%  \end{minipage}
-%\end{figure}
-%
-%\begin{figure}
-%        
-%        \begin{subfigure}[t]{0.45\linewidth}
-%                \centering
-%                \includegraphics[width=1.2\textwidth]{Soil_good}
-%                \centering
-%                \caption{Measured water retention curves for clay soil and a geosynthetic drainage net (GDN). Circles represent data points and lines represent fitted models.}
-%                \label{fig:hydrothermal}
-%        \end{subfigure}
-%        \hfill
-%        \begin{subfigure}[t]{0.45\linewidth}
-%                \centering
-%                \includegraphics[width=1.2\textwidth]{Soil_notsogood}
-%                \label{fig:EGS}
-%        \end{subfigure}
-%\end{figure}
-
-\begin{figure} 
-%% LARGER SUBFIGURE 
-	\subfloat[Caption large box]{% 
-		\begin{minipage}[c][1\width]{% 
-			0.5\textwidth} \centering%	 
-			\includegraphics[width=0.8\textwidth]{Soil_good} 			 		
-			\end{minipage}} 
-			
-%% SMALLER SUBFIGURE 
-	\subfloat{% 
-		\begin{minipage}[c][1\width]{% 
-			0.5\textwidth}  \centering% 
-		 \includegraphics[width=0.8\textwidth]{Soil_notsogood} 		   
-		 \end{minipage}} 
-		 
-\end{figure} 
 
 
-Look at both figures and write down which figure is more effective and why. As you think about the quality of the figures, consider the following: Can you understand the point the author was trying to make with the figure? Does the figure stand on its own?  Are the numbers and labels on each axis clear and easy to understand?  Can you easily differentiate between the data and the fitted models? How would you improve the figure? [2 min]\\\\\\\\\\\\\\\\\\\\
+\begin{figure}[b]
+\setlength{\unitlength}{1cm}
+\begin{minipage}[t]{8.5cm}
+\includegraphics[width=8.5cm]{Soil_notsogood} 
+%\begin{picture}(5.0, 5.0) ... ... \end{picture}\par
+%\caption{Good}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{8.5cm}
+\includegraphics[width=8.5cm]{Soil_good} 
+%\begin{picture}(5.0, 5.0) ... ... \end{picture}\par
+\caption{Bad}
+\end{minipage}
+\end{figure}
+
+
+
 
 Now discuss your thoughts in groups of three. One member of your group should take notes so you can report back to the rest of the class. [3--5 min] 
+
+\section *Model Fitting: {Oxygen Kinetics}
+
 
 \section *{Model Fitting: Sorption}
 
@@ -176,12 +125,11 @@ $\sfrac{1}{n}$ = Freundlich isotherm intensity parameter (unitless).\\
 
 \subsection *{Assignment}
 
-A data file (Excel) titled ``Sorption Data'' is located at blahblahblah drive blah
-%/ facultystaff on ‘netspace’ (T:)/dls054/public/CENG340/Week5_LabFiles/.  
+A data file (Excel) titled ``Sorption Data'' is located in the "Lab 3" folder on Moodle.  
 The file contains one data set of dissolved chlordane concentration, C$_{aq}$ (mg/L), vs adsorbed chlordane concentration, C$_{adsorbed}$ (mg/[g GAC]).
 
 \begin{itemize} 
-\item Use KaleidaGraph (or another software package of your choice) to fit the data set to  the two isotherm models---linear and Freundlich.
+\item Use KaleidaGraph to fit the data set to  the two isotherm models---linear and Freundlich.
 \item Create one high-quality plot with the C$_{aq}$ vs. C$_{adsorbed}$ data points, and the two curves that illustrates the model fits to the data set. 
 \item Think about how well each model fits the data and which model you think is most  appropriate. Note that we will not conduct proper statistical tests for goodness of fit, but you should be able to visually assess which model best fits the data and discuss this in your memo.
  
@@ -219,11 +167,11 @@ Bidleman, Terry F and Wong, Fiona and Backe, Cecilia and S{\"o}dergren, Anders a
 \begin{enumerate}
 \item Take a few minutes and fill out the following page with ideas for your memo.  If you use a laptop, don't worry about wording, sentence structure, or grammar. [15 minutes]\\ 
 
-\textbf{Objective}\\\\\\\\\\\\\\\\
+\textbf{Objective}\\
 
-\textbf{Methods}\\\\\\\\\\\\\\\\\\\\
+\textbf{Methods}\\
 
-\textbf{Results and Discussion}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\textbf{Results and Discussion}\\
 
 \item Share your thoughts with a partner.  Discuss what information belongs in each section. and how you will describe and analyze the figure you created.  Be prepared to share your ideas with the larger group. [5 minutes]
 \end{enumerate}

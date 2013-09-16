@@ -1,0 +1,85 @@
+\documentclass[11pt,letterpaper]{article}
+%\documentstyle[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+%\usepackage{tabularx,ragged2e,booktabs,caption}
+%\newcolumntype{C}[1]{>{\Centering}m{#1}}
+%\renewcommand\tabularxcolumn[1]{C{#1}}
+%\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{subcaption} 
+\usepackage{caption}
+\usepackage[left=2cm,right=2cm,top=1cm,bottom=2cm]{geometry}
+%\usepackage{siunitx}
+
+
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+
+\frenchspacing
+
+% Default margins are too wide all the way around. I reset them here
+%\setlength{\topmargin}{-.5in}
+%\setlength{\textheight}{9in}
+%\setlength{\oddsidemargin}{.125in}
+%\setlength{\evensidemargin}{.125in}
+\setlength{\textwidth}{6.25in}
+
+\title {\Large{\textbf{Lab 3: Nonlinear Curve Fitting---PreLab}}\\ \large{CENG 340--Introduction to Environmental Engineering\\
+Instructor: Deborah Sills\\ \textbf{Due in Lab: September 17, 2013}}}
+
+\author {}
+\date {}
+\maketitle
+
+\vspace{-1.5cm}
+
+\large{Name:}
+
+\vspace{-0.3cm}
+
+\section *{Figures---the good and the not so good}
+The following figures were taken from a document created by Prof. Malusis, \emph{DOs and DON’Ts for Creating High-Quality Figures that Contain Graphs}.   (You will receive a copy of this document in lab).  Both figures show the same data and model fits, but the graphs were created with different software packages and were formatted differently.
+
+
+
+\vspace{0.5cm}
+\begin{figure}
+        \centering
+        \begin{subfigure}[t]{0.4\textwidth}
+                \includegraphics[width=\textwidth]{soil_good}
+                \caption{Measured water retention curves for clay soil and a geosynthetic drainage net (GDN).  Circles represent data points and lines represent fitted models.}
+                \label{fig:soilgood}
+        \end{subfigure}%
+        \hspace{1cm}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[t]{0.4\textwidth}
+                \includegraphics[width=\textwidth]{soil_notsogood}
+                %\caption{}
+                \label{fig:soildnotsogood}
+        \end{subfigure}
+        %\caption{}\label{fig:animals}
+\end{figure}
+
+\vspace{0.5cm}
+
+Look at both figures and write down (use the other side of the page) which figure is more effective and why. As you think about the quality of the figures, consider the following: 
+\begin{itemize}
+\item Can you understand the point the author was trying to make with the figure? \item Does the figure stand on its own?  
+\item Are the numbers and labels on each axis clear and easy to understand?  Can you easily differentiate between the data and the fitted models? 
+\item How would you improve each of the figures?
+\end{itemize}
+\textbf{Be prepared to discuss in class.}
+
+
+\end{document}

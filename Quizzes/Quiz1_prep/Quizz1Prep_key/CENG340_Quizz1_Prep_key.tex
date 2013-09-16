@@ -1,0 +1,262 @@
+\documentclass[12pt,letterpaper]{article}
+%\documentstyle[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\newcommand{\var}[1]{{\operatorname{#1}}}
+%\usepackage{breqn}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+%%For Table perhaps%%
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+%\usepackage{tabularx,ragged2e,booktabs,caption}
+%\newcolumntype{C}[1]{>{\Centering}m{#1}}
+%\renewcommand\tabularxcolumn[1]{C{#1}}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{subcaption} 
+\usepackage{caption}
+%\usepackage{siunitx}
+%\usepackage{subfig}
+
+
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+\frenchspacing
+
+
+% Default margins are too wide all the way around. I reset them here
+%\setlength{\topmargin}{-.5in}
+%\setlength{\textheight}{9in}
+%\setlength{\oddsidemargin}{.125in}
+%\setlength{\textwidth}{6.25in}
+
+
+
+
+\title {Preparatory Assignment for Quiz 1---\textbf{Key}} 
+\author {CENG 340--Introduction to Environmental Engineering\\
+Instructor: Deborah Sills}
+\date {September 11, 2013}
+\maketitle
+
+\begin{enumerate}
+
+\item
+$\rho_{water} = 1 \mathrm{\frac{g}{mL}} = 1000 \mathrm{\frac{g}{L}}$
+
+\begin{equation*}
+[VC] = 0.002 \,\, \mathrm{\frac{mg \,VC}{L \, total}\times\frac{1 \, g\, VC}{1000\, mg\, VC}\times\frac{1\, L\, solution}{1000\,g\,solution}=2\times 10^{-9}\, \frac{g\,VC}{g\,solution}}
+\end{equation*} 
+
+\begin{equation*}
+[VC] = \mathrm{2\times 10^{-9}\, \frac{g\,VC}{g\,solution}\times \frac {10^6 \, ppm_m}{\frac{g}{g}}\times \frac{10^3 \, ppb_m}{ppm_m} = 2\, ppb_m}
+\end{equation*}\\
+
+\item
+Molecular weight of N = $14\, \mathrm{\frac{g}{mole}}$\\
+Molecular weight of NO$_3^-$ = $62\, \mathrm{\frac{g}{mole}}$\\
+MCL$_{NO_3^-}$ = 10 $\mathrm{\frac{mg-N}{L}}$
+
+\begin{itemize}
+\item Does the concentration of NO$_3^-$ violate the MCL?
+\begin{equation*}
+\mathrm{[NO_3^-] = 10 \frac{mg}{L}\times \frac{14\,mg\, N}{62\,mg\,NO_3^-} = 2.3 \, \frac{\var{mg-N}}{L}\, \textless \,10 \, \frac{\var{mg-N}}{L}}
+\end{equation*}\\
+MCL not violated.
+
+\item MCL Concentration in units of ppm$_m$:
+
+\begin{equation*}
+\mathrm{[NO_3^-]_{MCL} = 10\, \frac{\var{mg-N}}{L} = 10 \, ppm_m\, as\, N}
+\end{equation*}
+
+\item MCL Concentration in units of $\frac{mole}{L}$:
+
+\begin{equation*}
+\mathrm{[NO_3^-]_{MCL} = 10\, \frac{\var{mg-N}}{L}\times \frac{1\,g}{1000\,mg}\times \frac{1\,mole}{14\,g} = 7.1\times 10^{-4}\,\,\frac{mole}{L}}
+\end{equation*}
+
+\item MCL Concentration in units of ppb$_m$:
+
+\begin{equation*}
+\mathrm{[NO_3^-]_{MCL} = 10\, ppm_m\times \frac{10^3\, ppb_m}{1\, ppm_m} = 10,000\,ppb_m\,\, as\,\, N}
+\end{equation*}
+\end{itemize}
+
+\item 
+Outdoor air-quality 1-h standard: [CO] = 35 $\mathrm{\frac{mg}{m^3}}$\\
+At Lynah Rink: [CO]$_{low}$ = 35 ppm$_v$, and [CO]$_{high}$ = 115 ppm$_v$\\
+
+
+\emph{Part One:}
+
+\begin{itemize}
+\item
+\textbf{Step 1: Convert [CO]$_{std}$ from $\mathrm{\frac{mg}{m^3}}$ to $\mathrm{\frac{mole}{m^3}}$}\\
+
+Molecular weight of CO = 12 + 16 = 28 $\mathrm{\frac{g}{mole}}$
+
+\begin{equation*}
+\mathrm{[CO]_{std} = 35\,\frac{mg}{m^3}\times \frac{1\,mole}{28\,g}\times \frac{1\,g}{1000\,mg} = 1.25\times 10^{-3}\, \frac{mole}{m^3}}
+\end{equation*}
+
+\item
+\textbf{Step 2: Convert [CO]$_{std}$ from $\mathrm{\frac{mole}{m^3}}$ to $\mathrm{\frac{m^3}{m^3}}$} \\
+
+Use the ideal gas law: PV = nRT, where (1) temperature in Kelvin (K) = temperature in Celsius ($^0$C) + 273.15, (2) the ideal gas constant R = $8.205\times 10^{-5}\, \mathrm{\frac{m^3 \times atm}{mole \times Kelvin}}$, and (3) P = 1 atm. 
+
+\begin{multline*}
+[CO]_{std} = \mathrm{\frac{1.25\times 10^{-3}\, moles\,CO \times \frac{R\times T}{P}}{m^3\, air}} = \\
+= \mathrm{\frac{1.25\times 10^{-3}\, moles\,CO \times \frac{8.205\times10^{-5}\,\frac{m^3\times atm}{mole\times K}\times 293.15\, K}{1\, atm}}{m^3\, air} = 3.01\times 10^{-5}\, \frac{m^3\, CO}{m^3\, air}}
+\end{multline*}\\
+
+\item \textbf{Step 3: Convert [CO]$_{std}$ from $\frac{m^3}{m^3}$ to ppm$_v$:}
+
+\begin{equation*}
+\mathrm{[CO]_{std} = 3.01\times 10^{-5}\, \frac{m^3\, CO}{m^3\, air}\times 10^6\, \frac{ppm_v}{\frac{m^3}{m^3}} = 30\, ppm_v}
+\end{equation*}
+\end{itemize}
+
+At Lynah [CO] ranges from 35 to 115 ppm$_v$---violates the air quality standard all of the time.  Prof. Sills might want to bring a gas mask. \\
+
+\emph{Part Two:}\\
+
+[CO] in units of ppm$_v$ = $\frac{P_i}{P_{air}} \times 10^6$\\
+
+\begin{equation*}
+\mathrm{P_i(low) = \frac{35\, ppm_v \times 1\, atm}{10^6}\,=\, 3.5\times 10^{-5}\, atm}
+\end{equation*}
+
+\begin{equation*}
+\mathrm{P_i(high) = \frac{115\, ppm_v \times 1\, atm}{10^6}\,=\, 1.15\times 10^{-4}\, atm}
+\end{equation*}
+
+The partial pressure of CO at Lynah Rink ranges from $3.5\times 10^{-5}$ atm to $1.15\times 10^{-4}$ atm.
+
+\item Convert 10 $\frac{g}{L}$ to $\frac{mole}{L}$:
+
+\begin{equation*}
+\mathrm{[NaOH] = 10\, \frac{g}{L}\times \frac{1 \, mole}{40\,g} = 0.25\, \frac{mole}{L}}
+\end{equation*}
+
+\begin{equation*}
+\mathrm{[Na_2SO_4] = 10\, \frac{g}{L}\times \frac{1 \, mole}{142\,g} = 0.07\, \frac{mole}{L}}
+\end{equation*}
+
+\begin{equation*}
+\mathrm{[K_2Cr_2O_7] = 10\, \frac{g}{L}\times \frac{1 \, mole}{294\,g} = 0.03\, \frac{mole}{L}}
+\end{equation*}
+
+\begin{equation*}
+\mathrm{[KCl] = 10\, \frac{g}{L}\times \frac{1 \, mole}{74.5\,g} = 0.13\, \frac{mole}{L}}
+\end{equation*}
+
+\item
+MW$_{[HCO_3^-]}$ = 61 $\frac{g}{mole}$\\
+
+\begin{equation*}
+\mathrm{[HCO_3^-] = 50\, \frac{mg}{L}\times \frac{1 \, mole}{60\,g}\times \frac{1\, g}{1000\, mg} = 8.2\times 10^{-4}\, \frac{mole}{L}}
+\end{equation*}
+
+\begin{equation*}
+\mathrm{[HCO_3^-] = 8.2\times 10^{-4}\, \frac{mole}{L}\times \frac{1\, equivalent}{mole} = 8.2\times 10^{-4}\, \frac{eq}{L}}
+\end{equation*}
+
+\begin{equation*}
+\mathrm{[HCO_3^-] = 8.2\times 10^{-4}\, \frac{eq}{L}\times \frac{50\,g\, CaCO_3}{eq}\times \frac{1000 \, mg}{g} = 41\, \frac{mg}{L}}
+\end{equation*}\\
+
+\item
+\emph{Step One:
+Convert [Ca$^{2+}$], [Mg$^{2+}$], and [Mn$^{2+}$] from units of $\frac{mg}{L}$ to hardness as $\frac{meq}{L}$.}\\
+
+\begin{equation*}
+\mathrm{[Ca^{2+}] = 42\, \frac{mg}{L}\times \frac{1 \, mole}{40\,g}\times \frac{2\, eq}{mole} = 2.1 \, \frac{meq}{L}}
+\end{equation*}
+
+\begin{equation*}
+\mathrm{[Mg^{2+}] = 12\, \frac{mg}{L}\times \frac{1 \, mole}{24\,g}\times \frac{2\, eq}{mole} = 1.0\, \frac{meq}{L}}
+\end{equation*}
+
+\begin{equation*}
+\mathrm{[Mn^{2+}] = 10\, \frac{mg}{L}\times \frac{1 \, mole}{55\,g}\times \frac{2\, eq}{mole} = 0.36\, \frac{meq}{L}}
+\end{equation*}\\
+
+\emph{Step Two:
+Calculate total hardness in units of $\mathrm{\frac{meq}{L}}$.}\\
+
+Total Hardness = [Ca$^{2+}$] + [Mg$^{2+}$] + [Mn$^{2+}$] = 2.1 + 1.0 + 0.36 = 3.46 $\frac{meq}{L}$\\
+
+\emph{Step Three: Convert total hardness from units of $\mathrm{\frac{meq}{L}}$ to $\mathrm{\frac{mg-CaCO_3}{L}}$:}
+
+\begin{equation*}
+\mathrm{Total Hardness = 3.46\, \frac{meq}{L}\times\frac{50\, g\, CaCO_3}{eq} = 173\, \frac{mg\, CaCO_3}{L}}
+\end{equation*}
+
+\item 
+
+\begin{equation*}
+\mathrm{[Coliforms] = 9000\, \frac{coliform}{m^3}\times\frac{1\, m^3}{1000\, L}\times\frac{1 \,L}{1000\, mL}}
+\end{equation*} 
+
+\begin{equation*}
+\mathrm{[Coliforms]= 9\times 10^{-3}\, \frac{coliform}{mL}}
+\end{equation*}\\
+
+Therefore, in 100 mL, there are $\mathrm{9\times 10^{-3}\, \frac{coliform}{mL}\times 100\, mL = 0.9\, coliforms}$
+
+\item 
+Global warming potential of methane from
+
+\begin{itemize}
+\item Landfills:
+
+\begin{equation*}
+\mathrm{6709\, \, Gg\, \, CH_4\times 25\frac{g\, \var{CO_2-eq}}{g\, CH_4}= 167,725\,\, Gg\, \, \var{CO_2-eq}}
+\end{equation*}\\
+
+\item Wastewater Treatment Plants (WWTPs):
+
+\begin{equation*}
+\mathrm{1758\, \, Gg\, \, CH_4\times 25\frac{g\, \var{CO_2-eq}}{g\, CH_4}= 43,950\, \, Gg\, \, \var{CO_2-eq}}
+\end{equation*}\\
+
+\item Percent of annual methane emissions that come from landfills and WWTPs:
+
+\begin{equation*}
+\mathrm{\frac{(167725 + 43950)\, Gg \,\, \var{CO_2-eq}\times \frac{1\, Tg}{1000\, Gg}}{556.7\, \, Tg\,\, \var{CO_2-eq}}\times 100\, \% = 38 \, \% \,of \,annual \,methane\, emissions}
+\end{equation*}\\
+
+\item Percent of annual greenhouse gas (GHG) emissions that come from landfills and WWTPs: 
+
+\begin{equation*}
+\mathrm{\frac{(167725 + 43950)\, Gg \,\, \var{CO_2-eq}\times \frac{1\, Tg}{1000\, Gg}}{7074\, \, Tg\,\, \var{CO_2-eq}}\times 100\, \% = 3 \, \% \,of \,annual \,GHG\, emissions}
+\end{equation*}\\
+
+\end{itemize}
+
+\item 
+
+\begin{equation*}
+\mathrm{TS = \frac{(13.020 - 12.819)g}{0.2\, L}\times \frac{1000\, mg}{g} = 1005\, \frac{mg}{L}}
+\end{equation*}
+
+\begin{equation*}
+\mathrm{FS = \frac{(12.982 - 12.819)g}{0.2\, L}\times \frac{1000\, mg}{g} = 815\, \frac{mg}{L}}
+\end{equation*}
+
+\begin{equation*}
+\mathrm{VS = TS - FS = 1005 - 815 = 190\, \frac{mg}{L}}
+\end{equation*}
+ 
+
+
+\end{enumerate}
+\end{document}
