@@ -38,7 +38,7 @@
 
 
 
-\title {Nonlinear Curve Fitting---Lab 3 and Lab 6} 
+\title {Lab 3---Nonlinear Curve Fitting} 
 \author {CENG 340--Introduction to Environmental Engineering\\
 Instructor: Deborah Sills}
 \date {September 17, 2013}
@@ -51,7 +51,7 @@ Instructor: Deborah Sills}
 
 
 \section *{Due Date}
-\textbf{ Submit your memo via email before lab on September 24.} 
+\textbf{ Submit three graphs of dissolved oxygen vs time (Part I) and memo about the chlordane sorption data (Part II) via email or via Moodle before lab on September 24.} 
 
 \section *{Learning Objectives}
 \begin{enumerate}
@@ -63,46 +63,61 @@ Instructor: Deborah Sills}
 \section *{Rationale}
 \begin{enumerate}
 \item Environmental engineers use mathematical models that describe phenomena---such as oxygen depletion during biodegradation of organic matter---to design treatment technologies.  Thus far you have used linear models (easy to do in Excel), but many phenomena are not linear, and linearizing non-linear data results in less accurate models.  Many computer programs (e.g., Matlab, R, KaleidaGraph, SigmaPlot) include non-linear curve fitting packages and today we will use KaleidaGraph.  
+
 \item To be successful, engineers need to communicate results of preliminary experiments and final designs clearly and concisely to their colleagues, supervisors, and clients.  Such communications often include figures that contain graphs.  In addition to creating clear and effective figures, engineers need to discuss and analyze their figures appropriately. 
 \end{enumerate}
  
 
 
-\begin{figure}[b]
-\setlength{\unitlength}{1cm}
-\begin{minipage}[t]{8.5cm}
-\includegraphics[width=8.5cm]{Soil_notsogood} 
-%\begin{picture}(5.0, 5.0) ... ... \end{picture}\par
-%\caption{Good}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{8.5cm}
-\includegraphics[width=8.5cm]{Soil_good} 
-%\begin{picture}(5.0, 5.0) ... ... \end{picture}\par
-\caption{Bad}
-\end{minipage}
-\end{figure}
+
+\section *{\textbf{Part I:} Oxygen Depletion Kinetics}
+
+\subsection *{Background}
+Rate equations describe the formation or disappearance of chemicals over time, as shown in Eq.(1).  
+
+\begin{align}
+\cee{r = \frac{dC}{dt} = -kC^n}
+\end{align}
+
+where r is the rate of change, C is the concentration of chemical that is disappearing, k is the reaction rate coefficient, and n (an integer) is the reaction rate order.\\
+
+Last week Professor Higgins showed you how to transform non-linear rate equations (for disappearance of O$_2$ and to fit linear equations to your data in Excel.  However, it is preferable to fit non-linear data to non-linear equations directly, because this method will allow you to obtain more accurate model parameters.  
+
+\subsection *{Assignment}
+
+A data file (Excel) titled ``CENG340\_ Lab3\_ data'' is located in the "Lab 3" folder on Moodle.  The first three tabs of the file contains three data sets of dissolved O$_2$ (mg/L) vs time.  For each data set, you need to determine the reaction rate order (zero$\mathrm{^{th}}$, first, or second) based on Eq(2), Eq.(3) and Eq.(4), and the reaction rate coefficients.\\
+
+To do so, (1) integrate Eq.(2), Eq.(3) and Eq.(4), so you have an equation that describes C vs. t; (2) plot each of the three data sets in Kaleidagraph; and (3) fit the three types of rate equations (zero, first, and second order) and determine (by inspection) which model best fits the data. Note that later the class material on reactor design will rely heavily on these kinetic parameters.
+
+\begin{align}
+\cee{r = \frac{dC}{dt} = -k}
+\end{align}
+
+\begin{align}
+\cee{r = \frac{dC}{dt} = -kC}
+\end{align}
+
+\begin{align}
+\cee{r = \frac{dC}{dt} = -kC^2}
+\end{align}
 
 
+\subsection *{Deliverables for Part I}
+Submit via email or Moodle a document with three graphs.  Each graph should include one data set with one model fit.  On the plot note the order of the reactions and record the fitted value of k (the reaction rate coefficient)---including its \textbf{correct units}.  
 
 
-Now discuss your thoughts in groups of three. One member of your group should take notes so you can report back to the rest of the class. [3--5 min] 
-
-\section *Model Fitting: {Oxygen Kinetics}
-
-
-\section *{Model Fitting: Sorption}
+\section *{\textbf{Part II:}Sorption}
 
 %\subsection {Background}
 \subsection *{Background}
 Chlordane is a highly toxic chemical that was used widely as an insecticide until it was banned in the U.S. in the late 1980s \cite{army2009}.  Athough it was banned over 25 years ago, chlordane is still detected in groundwater in rural parts of the U.S. \cite{bidel2004}, and treating chlordane-contaminated water is challenging.
 
 \subsection *{Problem Description}
-The influent water to a drinking water plant in Ames, Iowa is contaminated with the insecticide chlordane. The plant operator has contracted the firm you work for to design a  process to remove chlordane from the water. The firm is considering designing a treatment process that uses granulated activated carbon (GAC).\\
+The influent water to a drinking water plant in Ames, Iowa is contaminated with the insecticide chlordane. The plant operator has contracted the firm you work for to design a  process to remove chlordane from the water. The firm is considering designing a treatment process that uses granulated activated carbon (GAC), which sorbs chlordane.\\
 
 You are part of a team that has been asked to asses whether treating the water with GAC will reduce chlordane concentrations to below its maximum contaminant level of 2 ppb. Your supervisor has asked you and the other new engineer in the firm to conduct a set of experiments to determine the parameters for the sorption isotherm of chlordane on GAC.  The model  parameters will be used to design a bench-scale treatment unit that will be further tested.\\
 
-Your coworker conducted the laboratory study and collected the data. You have to fit the data to two isotherms---Linear and Freundlich described in Eq. 1 and Eq. 2, respectively, and send a preliminary memo to your co-worker.  She has kindly agreed to write up the complete memo and send it to your supervisor.\\
+Your coworker conducted the laboratory study and collected the data. You've been asked to fit the data to one of two sorption isotherms---Linear and Freundlich, described in Eq. 5 and Eq. 6, respectively.  In other words, you need to choose the most appropriate model(or isotherm) based on the model fits of the two equations,  and send a memo to your co-worker that states which model best fits the data.  Your co-worker has kindly agreed to write up the complete memo (that describes her experimental work and your model fitting) and send it to your supervisor.\\
 
 \begin{equation}
 q = KC
@@ -113,33 +128,33 @@ q = KC
 q = KC^{\sfrac{1}{n}}
 \end{equation}\\
 
-where q = mass of adsorbate adsorbed per mass of adsorbent at equilibrium ($\sfrac{mg}{g}$),\\
+where q = mass of adsorbate adsorbed per mass of adsorbent at equilibrium ($\mathrm{\sfrac{mg}{g}}$),\\
 
-C = concentration of adsorbate in the aqueous phase at equilibrium ($\sfrac{mg}{L}$),\\
+C = concentration of adsorbate in the aqueous phase at equilibrium ($\mathrm{\sfrac{mg}{L}}$),\\
 
-K = Freundlich isotherm capacity parameter (($\sfrac{mg}{g}$)($\sfrac{L}{mg})^{\sfrac{1}{n}}$), and\\
+K = Freundlich isotherm soil-water partition coefficient(($\mathrm{\sfrac{mg}{g}}$)($\mathrm{\sfrac{L}{mg})}$), and\\
 
-$\sfrac{1}{n}$ = Freundlich isotherm intensity parameter (unitless).\\
-
-%In addition, you need to send a preliminary memo to your co-worker that describes the modeling work you have done.  In this introductory memo you should include the methods (e.g. description of the software package and equations you used), your figure, and a discussion of the figure.  
+$\mathrm{\sfrac{1}{n}}$ = Freundlich isotherm intensity parameter (unitless).\\
 
 \subsection *{Assignment}
 
-A data file (Excel) titled ``Sorption Data'' is located in the "Lab 3" folder on Moodle.  
-The file contains one data set of dissolved chlordane concentration, C$_{aq}$ (mg/L), vs adsorbed chlordane concentration, C$_{adsorbed}$ (mg/[g GAC]).
+The Sorption Data is located under the fourth tab in the ``CENG340\_ Lab3\_ data'' Excel file, and it consists of one data set of dissolved chlordane concentration, C$_{aq}$ (mg/L) vs adsorbed chlordane concentration, C$_{adsorbed}$ (mg/[g GAC]).
 
 \begin{itemize} 
-\item Use KaleidaGraph to fit the data set to  the two isotherm models---linear and Freundlich.
-\item Create one high-quality plot with the C$_{aq}$ vs. C$_{adsorbed}$ data points, and the two curves that illustrates the model fits to the data set. 
+\item Use KaleidaGraph to fit the data set to  the two isotherm models---linear and Freundlich.  
+
 \item Think about how well each model fits the data and which model you think is most  appropriate. Note that we will not conduct proper statistical tests for goodness of fit, but you should be able to visually assess which model best fits the data and discuss this in your memo.
+\item Create one high-quality plot---with the C$_{aq}$ vs. C$_{adsorbed}$ data points, and a curve---that illustrates the model fit to the data set.
+ 
+
  
 \end{itemize}
 
 
-\subsection *{Deliverables}
-Summarize your work in a preliminary memo addressed to your co-worker. For this assignment include the following sections: (1) Objective, (2) Methods,(3) Results and Discussion (this is where you will include the figures you created).  For this exercise you do not need to include Introduction and Conclusion sections.\\
+\subsection *{Deliverables: Part II}
+Summarize your work in a preliminary memo addressed to your co-worker. For this assignment include the following sections: (1) Objective, (2) Methods,(3) Results and Discussion (this is where you will include the figure you created).  Since this is a preliminary memo to your co-worker, who knows why you are estimating isotherm parameters, you do not need to include Introduction and Conclusions sections.\\
 
-Refer to the instructions handed out at the beginning of the semester for  formatting and writing style, and the sample memo.\\
+Refer to the instructions on technical writing that you received in CENG350, and the sample memo I gave you during the first lab meeting.  I am looking for clear and concise writing.\\
 
 
 

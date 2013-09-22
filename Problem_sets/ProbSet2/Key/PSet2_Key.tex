@@ -1,0 +1,326 @@
+\documentclass[12pt,letterpaper]{article}
+%\documentstyle[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\newcommand{\var}[1]{{\operatorname{#1}}}
+%\usepackage{breqn}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+%%For Table perhaps%%
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+%\usepackage{tabularx,ragged2e,booktabs,caption}
+%\newcolumntype{C}[1]{>{\Centering}m{#1}}
+%\renewcommand\tabularxcolumn[1]{C{#1}}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{subcaption} 
+\usepackage{caption}
+%\usepackage{siunitx}
+%\usepackage{subfig}
+
+
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+\frenchspacing
+
+
+% Default margins are too wide all the way around. I reset them here
+%\setlength{\topmargin}{-.5in}
+%\setlength{\textheight}{9in}
+%\setlength{\oddsidemargin}{.125in}
+%\setlength{\textwidth}{6.25in}
+
+
+
+
+\title {Problem Set 2---\textbf{Key}} 
+\author {CENG 340--Introduction to Environmental Engineering\\
+Instructor: Deborah Sills}
+\date {September 18, 2013}
+\maketitle
+
+\begin{enumerate}
+
+\item Arsenic
+
+[MCL]$\mathrm{_{arsenic}}$ = 10 ppb$_m$; MW$\mathrm{_{arsenic}}$ = 75 $\mathrm{\frac{g}{mole}}$
+
+\begin{enumerate}
+\item
+\begin{equation*}
+[As] = \mathrm{10 \, ppb_m \times \frac{1\, ppm_m}{10^{3}\, ppb_m} = 0.01\, ppm_m = 0.01 \, \frac{mg}{L}}
+\end{equation*}\\
+
+\begin{equation*}
+[As] = \mathrm{0.01 \, \frac{mg}{L}\times \frac{1 \, mole}{75\, g}\, = 1.3\times 10^{-4}\, \frac {mmole}{L}}
+\end{equation*}\\
+
+\begin{equation*}
+[As] = \mathrm{0.01 \, \frac{mg}{L}\times 10^3 \frac{\mu g}{mg} = 10\, \frac{\mu g}{L}}\\
+\end{equation*}\\
+
+\begin{equation*}
+[As] = \mathrm{1.3\times 10^{-4}\, \frac {mmole}{L}\times 10^6\, \frac{nmole}{mmole} = 130\, \frac{nmole}{L} }
+\end{equation*}\\
+
+\item Exposure to arsenic may lead to skin damage, problems with circulatory systems, and increased risk of cancer.  (Source: water.epa.gov).\\
+
+\item Naturally occurring arsenic has been found in water worldwide in every continent (Table 10.5 in the text book).\\
+
+Also, (not required for PSet) arsenic in drinking water sources comes from orchard runoff, electronics and glass production. (source: water.epa.gov).\\
+
+\end{enumerate}
+
+\item Turbid water is opaque, hazy, and cloudy.  Small particles in water cause it to be turbid.  In other words, turbid water is dirty.\\
+
+\item 
+\begin{enumerate}
+\item
+TS = 45 + 30 + 100 + 10 + 20 + 25 = 230 mg/L
+
+\item TDS = 45 + 30 + 10 + 20 = 105 mg/L
+
+\item TSS = 100 + 25 = 125 mg/L
+
+\item VSS = 25 mg/L
+
+\item FDS = 45 + 30 + 10 = 85 mg/L\\
+
+\end{enumerate}
+
+\item 
+
+[VC]$\mathrm{_{(aq)} = \frac{2\, mg}{60\, mL} = 0.05 \,\frac{g}{L}}$\\
+
+MW$\mathrm{_{VC}}$ = 62.5 $\mathrm{\frac{g}{mole}}$\\
+
+[VC]$\mathrm{_{(aq)} = 0.05 \,\frac{g}{L}\times \frac{1\, mole}{62.5\, g} = 8 \times10^{-4}\, \frac{mole}{L}}$\\
+
+K$\mathrm{_{H} = 10^{0.04}\, \frac{\frac{mole_g}{L_g}}{\frac{mole_{aq}}{L_{aq}}}}$ (definition of dimensionless K$\mathrm{_H}$ found on p. 67 of the text book.\\
+
+\begin{enumerate}
+\item
+
+\begin{align*}
+\cee{VC_{(aq)} &<=>[K_H] VC_{(g)}} 
+\end{align*}\\
+
+Write the equilibrium relationship of aqueous and gaseous VC---make sure you write the equation in such a way that the units of K$\mathrm{_H}$ work out.\\
+
+\begin{equation*}
+\mathrm{K_H = \frac{VC_{(g)}}{VC_{(aq)}} = 10^{0.04}\, \frac{\frac{mole_g}{L_g}}{\frac{mole_{aq}}{L_{aq}}}}
+\end{equation*}\\
+
+Calculate the concentration of VC (moles/L) in the air from Henry's constant:\\
+
+\begin{equation*}
+\mathrm{VC_{(g)} = K_H\times VC_{(aq)} = 10^{0.04}\times 8\times10^{-4} = 8.8\times 10^{-4}\, \frac{mole}{L}\, gas}
+\end{equation*}\\
+
+Volume of the air = 100 m$^3$.  Use this and calculate total moles of VC in the air:\\
+
+moles VC = $\mathrm{8.8\times 10^{-4}\, \frac{mole}{L}\, \times 100\, m^3\, \times \frac{1000\, L}{m^3}= 88\, moles\,\, VC\, in\, the\, air}$\\
+
+Use the ideal gas law and calculate the Volume of VC in the air:\\
+
+\begin{equation*}
+\mathrm{V_{VC} = \frac{nRT}{P} = \frac{88\, moles \times 8.205\times 10^{-5}\, \frac{m^3atm}{moleK}\times 298.15\, K}{1\, atm} = 2.14\, m^3}
+\end{equation*}\\
+
+Calculate the volume fraction and multiply by $10^6$ to obtain the gaseous concentration of VC in units of ppm$\mathrm{_v}$\\
+
+\begin{equation*}
+\mathrm{[VC]_g = \frac{V_{VC}}{V_{tot}}\times 10^6 = \frac{2.1\,m^3}{100\, m^3}\times 10^6 = 21,500 \, ppm_v}
+\end{equation*}\\
+
+\begin{equation*}
+\mathrm{21,500 \, ppm_v >> 10 \, ppm_v}
+\end{equation*}\\
+
+BAD NEWS!
+
+\item The students should have put the open (or unsealed bottle) in the \emph{fume hood} as quickly as possible and told everyone to leave the lab immediately.\\
+\end{enumerate}
+
+\item (16 pts)
+Assume atmospheric pressure of 1 atm, and convert atmospheric CO$_2$ concentration of 390 ppm$\mathrm{_v}$ to partial pressure of $\mathrm{CO_2}$\\
+
+\begin{equation*}
+\mathrm{[CO_{2}]_g = 390 ppm_v\times \frac{1\, atm}{10^6\, ppm_v} = 3.9\times 10^{-4}\, atm} 
+\end{equation*}\\
+
+$\mathrm{[CO_2]_{(g)}}$ values between 310 and 400 ppm$\mathrm{_v}$ acceptable.  Alternatively, P$\mathrm{_{CO_2} = 10^{-3.5}\, atm}$ is acceptable as well.\\
+
+$\mathrm{K_H = 29.4\, \frac{L\times atm}{mole}}$\\
+
+$\mathrm{MW_{CO_2} = 44\, \frac{g}{mole}}$\\
+
+\begin{enumerate}
+\item Step 1: Write equilibrium relationship for partitioning of $\mathrm{CO_2}$ from the gas to the aqueous phase.  Write the reaction in such a way that the units of $K_H$ work out.
+
+\begin{align*}
+\cee{CO_{2(aq)} &<=>[K_H] CO_{2(g)}} 
+\end{align*}\\
+
+\item Calculate the dissolved aqueous concentration of $\mathrm{CO_2}$ using Henry's Law constant and the atmospheric concentration of $\mathrm{CO_2}$, which you can find online.\\
+
+\begin{equation*}
+\mathrm{K_H = \frac{[CO_{2}]_{(g)}}{[CO_{2}]_{(aq)}}} 
+\end{equation*}\\
+
+\begin{equation*}
+\mathrm{[CO_{2}]_{(aq)} = \frac{[CO_{2}]_{(g)}}{K_H} = \frac{3.9\times 10^{-4}\, atm}{29.4\, \frac{L\times atm}{mole}} = 1.33\times 10^{-5}\, \frac{moles}{L}} 
+\end{equation*}\\
+
+
+\begin{equation*}
+\mathrm{[CO_{2}]_{(aq)} = 1.33\, \frac{moles}{L}\times 44\, \frac{g}{mole}\times \frac{1000\, mg}{g} = 0.58\, \frac{mg}{L}} 
+\end{equation*}\\
+
+\item When the concentration of dissolved aqueous $\mathrm{CO_2}$ increases, the concentration of $\mathrm{H^+}$ also increases and pH decreases.
+
+\end{enumerate}
+
+\item 
+
+Balance the reaction:\\
+
+\begin{align*}
+\cee{\mathrm{C_2H_5OH}}\,  + \,  3\mathrm{O_2}\, \rightarrow \, 2\mathrm{CO_2} \, + \,  3\mathrm{H_2O}
+\end{align*}\\
+
+
+Convert lbs of ethanol to kg of ethanol:\\
+
+\begin{equation*}
+\mathrm{500\, lbs\, ethanol \times \frac{1\, kg}{2.2\, lbs} = 227\, kg\, ethanol}
+\end{equation*}\\
+
+\begin{enumerate}
+
+\item Use the mass ratios noted above below the equation to calculate the mass of O$_2$ required for biodegradation:\\
+
+\begin{equation*}
+\mathrm{Mass\, of\, O_2 = 227\, kg\, eth\times \frac{96\, g\, O_2}{46\, g\, eth} = 474\, kg\, O_2}
+\end{equation*}\\
+
+
+
+\item Calculate the mass of CO$_2$ produced:\\
+
+\begin{equation*}
+\mathrm{Mass\, of\, CO_2 = 227\, kg\, eth\times \frac{88\, g\, O_2}{46\, g\, eth} = 435\, kg\, CO_2}
+\end{equation*}\\
+
+\item Convert kg of CO$_2$ to moles.  Then use the ideal gas law to convert to volume of CO$_2$.\\
+
+\begin{equation*}
+\mathrm{Moles\, of\, CO_2 = 435\, kg\, CO_2\times \frac{1000\, g}{kg} \times \frac{1\, mole}{44\, g} = 9881\, mole}
+\end{equation*}\\
+
+\begin{equation*}
+\mathrm{V = \frac{nRT}{P} = \frac{9881\times 8.205\times 10^{-5}\, \frac{m^3atm}{moleK}\times 303.15\, K}{1\, atm} = 245 \, m^3}
+\end{equation*}\\
+
+\end{enumerate}
+
+\item
+$\mathrm{H_2SO_4}$ is a strong acid:\\
+
+\begin{align*}
+\cee{H_2SO_4\, \rightarrow \, 2H^+ \, + \,  SO_4^{2-}}
+\end{align*}\\
+
+
+
+\begin{enumerate}
+\item To calculate moles of [H$^+$], calculate number of moles of $\mathrm{H_2SO_4}$ and multiply by 2:\\
+
+
+\begin{equation*}
+\mathrm{10\, \frac{mg\, H_2SO_4}{L}\times \frac{1\, g}{1000\, mg}\times \frac{1\,moles}{98\, g}\times \frac{2 \, mole \, H^+}{mole\, H_2SO_4} = 2\times 10^{-4}\,\frac{mole}{L}\, H^+}
+\end{equation*}\\
+
+
+\begin{equation*}
+\mathrm{pH = -log[H^+] = -log(2\times 10^{-4}) = 3.7}
+\end{equation*}\\
+
+
+\item Normality of H$_2$SO$_4$ solution equal the moles per Liter of H$_+$, which equals $\mathrm{2\times 10^{-4}\,\frac{eq}{L}}$\\
+
+\item 
+Convert [HCO$_3^-$] from mg/L as CaCO$_3$ to eq/L:\\
+
+\begin{equation*}
+\mathrm{[HCO_3^-] = 90\, \frac{mg\, CaCO_3}{L}\times \frac{1\,g}{1000\, mg}\times \frac{1\, eq}{50\, g} = 1.8\times 10^{-3}\, \frac{eq}{L}}
+\end{equation*}\\
+
+Use:\\
+
+\begin{equation*}
+\mathrm{C_{H^+}\times V_{H^+\, solution} = C_{bicarb} \times V_{bicarb\, solution}}
+\end{equation*}\\
+
+\begin{equation*}
+\mathrm{V_{bicarb\, solution} = \frac{C_{H^+}\times V_{H^+\, solution}}{C_{bicarb}} = \frac{2\times 10^{-4}\, \frac{eq}{L}\times 100\, mL}{1.8\times 10^{-3}}\, \frac{eq}{L} = 11\, mL}
+\end{equation*}\\
+\end{enumerate}
+
+\item
+First Order Reaction:\\
+
+\begin{equation*}
+\mathrm{A = A_0\times e^{-kt}}
+\end{equation*}\\
+
+\begin{enumerate}
+
+\item 90\% of A destroyed, so 10\% of initial concentration remains.\\
+
+\begin{equation*}
+\mathrm{0.1A_0 = A_0\times e^{-0.1t}}
+\end{equation*}\\
+
+\begin{equation*}
+\mathrm{t = \frac{ln(\frac{0.1}{1})}{-0.1\, day^{-1}}  = 23\, days}
+\end{equation*}\\
+
+\item Same as part (a) except that 99\% destroyed, so 1\% remaining:
+
+\begin{equation*}
+\mathrm{t = \frac{ln(\frac{0.01}{1})}{-0.1\, day^{-1}}  = 46\, days}
+\end{equation*}\\
+
+\item Same as part (a) except that 99.9\% destroyed, so 0.1\% remaining:
+
+\begin{equation*}
+\mathrm{t = \frac{ln(\frac{0.001}{1})}{-0.1\, day^{-1}}  = 69\, days}
+\end{equation*}\\
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+\end{document}
