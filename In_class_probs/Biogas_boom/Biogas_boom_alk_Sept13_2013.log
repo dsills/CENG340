@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  13 SEP 2013 00:05
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  19 SEP 2013 18:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1082,7 +1082,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen161
 \Gm@dimlist=\toks83
 )
-No file Biogas_boom_alk_Sept13_2013.aux.
+(./Biogas_boom_alk_Sept13_2013.aux)
 \openout1 = `Biogas_boom_alk_Sept13_2013.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -1099,6 +1099,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 23.
+
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -1182,28 +1183,158 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 23.
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 \c_siunitx_mathtt_int=\count301
- [1
+LaTeX Info: Redefining \bond on input line 65.
+LaTeX Info: Redefining \dbond on input line 65.
+LaTeX Info: Redefining \tbond on input line 65.
+LaTeX Info: Redefining \bond on input line 65.
+LaTeX Info: Redefining \dbond on input line 65.
+LaTeX Info: Redefining \tbond on input line 65.
+LaTeX Info: Redefining \bond on input line 65.
+LaTeX Info: Redefining \dbond on input line 65.
+LaTeX Info: Redefining \tbond on input line 65.
+LaTeX Info: Redefining \bond on input line 65.
+LaTeX Info: Redefining \dbond on input line 65.
+LaTeX Info: Redefining \tbond on input line 65.
+LaTeX Info: Redefining \bond on input line 65.
+LaTeX Info: Redefining \dbond on input line 65.
+LaTeX Info: Redefining \tbond on input line 65.
+LaTeX Info: Redefining \bond on input line 65.
+LaTeX Info: Redefining \dbond on input line 65.
+LaTeX Info: Redefining \tbond on input line 65.
+LaTeX Info: Redefining \bond on input line 65.
+LaTeX Info: Redefining \dbond on input line 65.
+LaTeX Info: Redefining \tbond on input line 65.
+LaTeX Info: Redefining \bond on input line 65.
+LaTeX Info: Redefining \dbond on input line 65.
+LaTeX Info: Redefining \tbond on input line 65.
+LaTeX Info: Redefining \bond on input line 65.
+LaTeX Info: Redefining \dbond on input line 65.
+LaTeX Info: Redefining \tbond on input line 65.
+LaTeX Info: Redefining \bond on input line 65.
+LaTeX Info: Redefining \dbond on input line 65.
+LaTeX Info: Redefining \tbond on input line 65.
+LaTeX Info: Redefining \bond on input line 71.
+LaTeX Info: Redefining \dbond on input line 71.
+LaTeX Info: Redefining \tbond on input line 71.
+LaTeX Info: Redefining \bond on input line 71.
+LaTeX Info: Redefining \dbond on input line 71.
+LaTeX Info: Redefining \tbond on input line 71.
+LaTeX Info: Redefining \bond on input line 71.
+LaTeX Info: Redefining \dbond on input line 71.
+LaTeX Info: Redefining \tbond on input line 71.
+LaTeX Info: Redefining \bond on input line 71.
+LaTeX Info: Redefining \dbond on input line 71.
+LaTeX Info: Redefining \tbond on input line 71.
+LaTeX Info: Redefining \bond on input line 71.
+LaTeX Info: Redefining \dbond on input line 71.
+LaTeX Info: Redefining \tbond on input line 71.
+LaTeX Info: Redefining \bond on input line 71.
+LaTeX Info: Redefining \dbond on input line 71.
+LaTeX Info: Redefining \tbond on input line 71.
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+[1
 Non-PDF special ignored!
 
-{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Biog
-as_boom_alk_Sept13_2013.aux) ) 
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Info: Redefining \bond on input line 83.
+LaTeX Info: Redefining \dbond on input line 83.
+LaTeX Info: Redefining \tbond on input line 83.
+LaTeX Info: Redefining \bond on input line 83.
+LaTeX Info: Redefining \dbond on input line 83.
+LaTeX Info: Redefining \tbond on input line 83.
+LaTeX Info: Redefining \bond on input line 83.
+LaTeX Info: Redefining \dbond on input line 83.
+LaTeX Info: Redefining \tbond on input line 83.
+LaTeX Info: Redefining \bond on input line 83.
+LaTeX Info: Redefining \dbond on input line 83.
+LaTeX Info: Redefining \tbond on input line 83.
+LaTeX Info: Redefining \bond on input line 83.
+LaTeX Info: Redefining \dbond on input line 83.
+LaTeX Info: Redefining \tbond on input line 83.
+LaTeX Info: Redefining \bond on input line 83.
+LaTeX Info: Redefining \dbond on input line 83.
+LaTeX Info: Redefining \tbond on input line 83.
+LaTeX Info: Redefining \bond on input line 83.
+LaTeX Info: Redefining \dbond on input line 83.
+LaTeX Info: Redefining \tbond on input line 83.
+LaTeX Info: Redefining \bond on input line 83.
+LaTeX Info: Redefining \dbond on input line 83.
+LaTeX Info: Redefining \tbond on input line 83.
+LaTeX Info: Redefining \bond on input line 83.
+LaTeX Info: Redefining \dbond on input line 83.
+LaTeX Info: Redefining \tbond on input line 83.
+LaTeX Info: Redefining \bond on input line 83.
+LaTeX Info: Redefining \dbond on input line 83.
+LaTeX Info: Redefining \tbond on input line 83.
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+LaTeX Info: Redefining \bond on input line 91.
+LaTeX Info: Redefining \dbond on input line 91.
+LaTeX Info: Redefining \tbond on input line 91.
+LaTeX Info: Redefining \bond on input line 91.
+LaTeX Info: Redefining \dbond on input line 91.
+LaTeX Info: Redefining \tbond on input line 91.
+LaTeX Info: Redefining \bond on input line 91.
+LaTeX Info: Redefining \dbond on input line 91.
+LaTeX Info: Redefining \tbond on input line 91.
+LaTeX Info: Redefining \bond on input line 91.
+LaTeX Info: Redefining \dbond on input line 91.
+LaTeX Info: Redefining \tbond on input line 91.
+LaTeX Info: Redefining \bond on input line 91.
+LaTeX Info: Redefining \dbond on input line 91.
+LaTeX Info: Redefining \tbond on input line 91.
+LaTeX Info: Redefining \bond on input line 91.
+LaTeX Info: Redefining \dbond on input line 91.
+LaTeX Info: Redefining \tbond on input line 91.
+LaTeX Info: Redefining \bond on input line 91.
+LaTeX Info: Redefining \dbond on input line 91.
+LaTeX Info: Redefining \tbond on input line 91.
+LaTeX Info: Redefining \bond on input line 91.
+LaTeX Info: Redefining \dbond on input line 91.
+LaTeX Info: Redefining \tbond on input line 91.
+LaTeX Info: Redefining \bond on input line 91.
+LaTeX Info: Redefining \dbond on input line 91.
+LaTeX Info: Redefining \tbond on input line 91.
+LaTeX Info: Redefining \bond on input line 91.
+LaTeX Info: Redefining \dbond on input line 91.
+LaTeX Info: Redefining \tbond on input line 91.
+[2] (./Biogas_boom_alk_Sept13_2013.aux) ) 
 Here is how much of TeX's memory you used:
- 13486 strings out of 493633
- 268813 string characters out of 3143378
- 288084 words of memory out of 3000000
- 16554 multiletter control sequences out of 15000+200000
- 12929 words of font info for 50 fonts, out of 3000000 for 9000
+ 13493 strings out of 493633
+ 268915 string characters out of 3143378
+ 292084 words of memory out of 3000000
+ 16558 multiletter control sequences out of 15000+200000
+ 13276 words of font info for 51 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 44i,5n,40p,430b,175s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr8.pfb>
-Output written on Biogas_boom_alk_Sept13_2013.pdf (1 page, 46480 bytes).
+ 44i,24n,56p,475b,262s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2011/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2011/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2011/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti12.pfb>
+Output written on Biogas_boom_alk_Sept13_2013.pdf (2 pages, 111717 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -35,7 +35,7 @@
 \setlength{\textwidth}{6.25in}
 
 \title {\Large{\textbf{Big Biogas Boom---How much alkalinity?}}\\ \large{CENG 340--Introduction to Environmental Engineering\\
-Instructor: Deborah Sills\\ \textbf{In Class: September 13/16, 2013}}}
+Instructor: Deborah Sills\\ \textbf{In Class: September 18, 2013}}}
 
 \author {}
 \date {}
@@ -45,20 +45,50 @@ Instructor: Deborah Sills\\ \textbf{In Class: September 13/16, 2013}}}
 
 \large{Name:}
 
-\vspace{-0.3cm}
-
-Anaerobic digesters that convert organic waste (e.g., animal manure, food waste, and sewage sludge) often fail because of insufficient alkalinity required to buffer the digester and maintain a pH of 7 or above.  At pH < 7, methanogens, the organisms that produce methane in digesters, are not active. Alkalinity as bicarbonate is often added to digesters to prevent the pH from dropping below 7. 
-
-You are designing an anaerobic digester that will convert food waste, composed primarily of carbohydrate, to biogas.  Note that carbohydrate can be approximated as glucose and an unbalanced reaction for glucose conversion to methane is presented in Eq.(1):
 
 
-Calculate the concentration of bicarbonate alkalinity in mg/L as CaCO$_3$ that is needed in the digester to maintain a pH of 7.   
+\section *{Take-Home Extra Credit Quiz} 
+Turn in by 5pm on Friday for an extra credit quiz.
 
+\section *{Background}
 
+Anaerobic digesters that convert organic waste (e.g., animal manure, food waste, and sewage sludge) to biogas often fail because of insufficient alkalinity required to buffer the digester and maintain a pH of 7 or above.  When the pH drops to values below 6.5 methanogens stop  producing methane (the high-energy component of biogas). Alkalinity in the form of bicarbonate is often added to digesters to prevent the pH from dropping below 7.
 
+\section *{Objective}
+Calculate the concentration of bicarbonate alkalinity in mg/L as CaCO$_3$ that is needed  to maintain a pH of 7 in a digester.   The digester was designed to convert food waste, composed primarily of carbohydrate, to biogas. Assume that the pressure in the headspace of the digester is  1 atm, and that the temperature is 30 $^0$C. 
 
+\section *{Useful Information}
+Carbohydrate can be approximated as glucose and the \emph{balanced} reaction for glucose conversion to biogas is presented in Eq.(1).  Note that biogas is composed of methane and carbon dioxide:
 
+\begin{align}
+\cee{C_6H_{12}O_{6(s)}  &-> 3CH_{4(g)} + 3CO_{2(g)}}
+\end{align}
 
+The CO$_2$ that is produced in the digester will partition between the liquid phase (slurry of food waste undergoing biodegradation) and the headspace of the digester, based on the equilibrium relationship described in Eq.(2). Without sufficient alkalinity CO$_2$ dissolution  will result in an increase in [H$^+$] and a decrease in pH.
+
+\begin{align}
+\cee{CO_{2(g)} &<=>[K_H] CO_{2(aq)}}
+\end{align}
+
+Where, Henry's constant, K$_H$ = 0.0246. $\mathrm{\frac{moles}{L\times atm}}$ at T = 30 $^0C$ \\
+
+You can assume that all of the CO$_{2(aq)}$ exists as carbonic acid, H$_2$CO$_3$, (good approximation).  In other words assume that H$_2$CO$_3$ = CO$_{2(aq)}$.\\  
+
+In addition, carbonic acid---\emph{a weak acid}---and bicarbonate are in equilibrium with each other based on Eq. (3).
+
+\pagebreak 
+
+\begin{align}
+\cee{[H_2CO_3]_{(aq)} &<=>[K_{a1}] [HCO_3^{-}]_{(aq)} + [H^+]_{(aq)}}
+\end{align}
+
+Where pK$\mathrm{_{a1}}$ = 6.3\\
+
+Note that at pH = 6--8, the concentration of CO$_3^{2-}$, which is in equilibrium with bicarbonate (also a weak acid), based on Eq. (4) is insignificant and can be ignored.  (This means that for this problem you can ignore Eq. (4)).
+
+\begin{align}
+\cee{[HCO_3^{-}]_{(aq)} &<=>[K_{a2}] [CO_3^{2-}]_{(aq)} + [H^+]_{(aq0}}
+\end{align}
 
 
 \end{document}

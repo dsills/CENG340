@@ -1,0 +1,105 @@
+\documentclass[12pt,letterpaper]{article}
+%\documentstyle[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+%%For Table perhaps%%
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+%\newcolumntype{C}[1]{>{\Centering}m{#1}}
+\renewcommand\tabularxcolumn[1]{C{#1}}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{subcaption} 
+\usepackage{caption}
+\usepackage[colorlinks]{hyperref}
+\usepackage[svgnames]{xcolor}
+\hypersetup{citecolor=DeepPink4}
+\hypersetup{linkcolor=DarkRed}
+\hypersetup{urlcolor=DarkBlue}
+\usepackage{cleveref}
+\usepackage{enumerate}
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+\frenchspacing
+
+\title {Problem Set 3} 
+\author {CENG 340--Introduction to Environmental Engineering\\
+Instructor: Deborah Sills}
+\date {September 17, 2013}
+\maketitle
+
+\section *{Due Date}
+Wednesday 25 September, in class.
+
+\section *{Learning Goals}
+\begin{enumerate}
+\item Write and apply equilibrium equations to acid-base, precipitation-dissolution, and and sorption reactions.
+\item Apply kinetic equations to determine reaction times.
+\item Use the law of conservation of mass to write and apply a mass balance expression.
+\end{enumerate}
+
+
+\section *{Questions}
+\begin{enumerate}
+\item \emph{(12 points)} If 50 mg of CO$_3^{2-}$ and 50 mg of Ca$^{2+}$ are present in 1 L of water, what will be the final (equilibrium) concentration of Ca$^{2+}$?  Remember that these two ions are in equilibrium with solid calcium carbonate (CaCO$_3$) according to the following equation and $\mathrm{pK_{sp}}$ = 8.3. 
+
+\begin{align*}
+\cee{CaCO_3  &<=>[K_{sp}] [Ca^{2+}]_{aq} + [CO_3^{2-}]_{aq}}
+\end{align*}
+
+\item \emph{(12 points)} \textbf{FE Exam Formatted Problem}\\
+What pH is required to precipitate all but 0.20 mg/L of the iron from a raw water with an Fe$^{3+}$ concentration of 21 mg/L?  Assume the temperature is 25 $^0$C, and pK$\mathrm{_{sp}}$ = 38.57.  The reaction is
+
+\begin{align*}
+\cee{Fe(OH)_3  &<=>[K_{sp}] Fe^{3+}_{(aq)} + 3OH^-_{(aq)}}
+\end{align*}
+
+\begin{enumerate}
+\item 11.04
+\item 1.96
+\item 2.96
+\item 9.90
+\end{enumerate}
+
+Show your work even though you wouldn't have to for the FE.
+
+
+\item \emph{(12 points)} \textbf{FE Exam Formatted Problem} Estimate the approximate alkalinity, in mg/L as CaCO$_3$, of water with a carbonate ion concentration of 17.0 mg/L and a bicarbonate ion concentration of 111.0 mg/L. 
+
+\begin{enumerate}
+\item 119 mg/L as CaCO$_3$
+\item 128 mg/L as CaCO$_3$
+\item 148 mg/L as CaCO$_3$
+\item 146 mg/L as CaCO$_3$
+\end{enumerate}
+Note that "approximate alkalinity" means that you should ignore [OH$^-$] and [H$^+$].
+Show your work even though you wouldn't have to for the FE.
+
+\item \emph{(12 points)} (modified based on Mihelcic and Zimmerman) When Cl$_2$ gas is added to water during the disinfection of drinking water, it hydrolyzes water to form HOCl, a weak acid. The disinfection power of HOCl is 88 times better than its conjugate base OCl$^-$.  The pK$\mathrm{_a}$ for HOCl is 7.5.  If 15 mg of HOCl was added per every liter of water being treated, what fraction of the HOCl is not dissociated to its conjugate base OCl$^-$ and H$^+$?
+
+\item \emph{(12 points)} (modified based on Mihelcic and Zimmerman) Atrazine, an herbicide widely used for corn is a common groundwater pollutant in the corn-producing regions of the United States.  In a particular Midwestern soil, the linear isotherm parameter, K, equals $8\times 10^{-3}$ L/g.  Calculate the fraction of the total atrazine that will be sorbed to to the soil.  The bulk density of the soil is 1.25 $\mathrm{\sfrac{g}{cm^3}}$ (this means that each cubic centimeter of soil contains 1.25 g soil particles).  The porosity of the soil is 0.4 and you can assume that the soil is saturated with water.
+
+\item \emph{(15 points)} A storage facility was abandoned 19 years ago.  During its active life, oil was routinely spilled and historical records estimate that the oil concentration in the soil was as high as 400 mg/kg at the time the facility closed.  Now a fast food chain wants to build a restaurant at this location.  Soil samples indicate that the soil is still contaminated with 20 mg/kg of oil.  A local engineer concludes that the oil is still being biodegraded by soil microbes at a rate of 20 mg/kg each year, and that in one more year, the site will be ``oil--free.''
+
+\begin{enumerate}
+\item \emph{If} correct, what would be the technical basis for the engineer's conclusion? Note that you'll need to provide calculations to support your answer.
+\item If the engineer is wrong, provide appropriate ``worst--case'' calculations and determine how long it could take (from the time of facility shut--down) to reach a concentration of 1 mg/kg.
+\end{enumerate}
+
+\item \emph{(12 points)} A sanitary landfill has available space of 16.2 ha with an average depth of 10 m.  Seven hundred sixty-five (765) cubic meters of solid waste are dumped at the site 5 days per week.  This waste is compacted to twice its delivered density. Draw a mass balance diagram and estimate the expected life of the landfill in years.
+
+\item \emph{(13 points)} Question 4.5 in the textbook (Mihelcic and Zimmerman).  For b, assume that the volumetric flow rate of the Zamboni exhaust is relatively insignificant.
+
+ 
+\end{enumerate}
+
+\end{document}
