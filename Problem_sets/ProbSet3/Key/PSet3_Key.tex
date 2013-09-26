@@ -37,19 +37,156 @@ Instructor: Deborah Sills}
 \date {September 17, 2013}
 \maketitle
 
-\section *{Due Date}
-Wednesday 25 September, in class.
-\section *{Learning Goals}
-\begin{enumerate}
-\item Write and apply equilibrium equations to acid-base, precipitation-dissolution, and and sorption reactions.
-\item Apply kinetic equations to determine reaction times.
-\item Use the law of conservation of mass to write and apply a mass balance expression.
-\end{enumerate}
 
 
 \section *{Questions}
 \begin{enumerate}
-\item 
+\item Precipitation--Dissolution
+
+\begin{align*}
+\cee{CaCO_3 &<=>[K_{sp}] [Ca^{2+}] + [CO_3^{2-}]} 
+\end{align*}
+
+\begin{equation*}
+\mathrm{K_{sp} = [Ca^{2+}][CO_3^{2-}]= 10^{-8.3}}
+\end{equation*}
+
+Since equilibrium occurs at the \textbf{end point of a reaction}, we need to calculate the final concenrations of Ca$^{2+}$ and Ca$^{2-}$. To do so, set up a RICE table.  R(reaction), I(initial conditions), C(change), and E(equilibrium).  But first need to convert initial concentrations from mg/L to mole/L:
+
+\begin{equation*}
+\mathrm{ [Ca^{2+}] = 50\, \frac{mg}{L}\, \times \frac{1\, g}{1000\, mg}\times \frac{1\, mole}{40\, g} = 8.3\times 10^{-4}\, \frac{moles}{L}}
+\end{equation*}
+
+\begin{equation*}
+\mathrm{ [CaO_3^{2-}] = 50\, \frac{mg}{L}\, \times \frac{1\, g}{1000\, mg}\times \frac{1\, mole}{60\, g} = 1.25\times 10^{-3}\, \frac{moles}{L}}
+\end{equation*}\\
+
+
+
+\begin{minipage}{\linewidth}
+\centering
+\captionof{table}{Rice Diagram} \label{tab:title}
+
+\begin{tabular}{|c|c|c|p{3.1cm}|}\toprule[1.25pt]
+\bf {R}eaction & \bf Ca$^{2+}$	& \bf CO$_3^{2-}$	& \bf CaCO$_3$\\\midrule
+\bf{I}nitial	&  $\mathrm{8.3\times 10^{-4}\, \frac{mole}{L}}$	& $\mathrm{1.25\times 10^{-3}\, \frac{mole}{L}}$ & \\ \hline
+\bf{C}hange	& -x 	& -x	& \\ \hline
+\bf{E}quilibrium & $\mathrm{(8.3\times 10^{-4} - x)\, \frac{mole}{L}}$	& $\mathrm{(1.25\times 10^{-3} -x)\, \frac{mole}{L}}$	&  \\  \hline
+
+\bottomrule[1.25pt]
+
+\end {tabular}\par
+\end{minipage}\\\\
+
+Now we can substitute the equilibrium concentrations into the above equation for K$\mathrm{_{sp}}$
+
+\begin{equation*}
+\mathrm{K_{sp} = [Ca^{2+}][CO_3^{2-}]= (8.3\times 10^{-4} - x)\times(1.25\times 10^{-3} -x) = 10^{-8.3}}
+\end{equation*}\\
+
+Solve for x. \\
+
+x = $\mathrm{8.2 \times 10^{-4}\, \frac{mole}{L}}$\\
+
+[Ca$\mathrm{^{2+}]_{equilibrium} = 1.25\times 10^{-3} - 8.2 \times 10^{-4} = 4.2 \times 10^{-4}\, \frac{mole}{L}}$\\
+
+[Ca$\mathrm{^{2+}]_{equilibrium}  = 4.2 \times 10^{-4}\, \frac{mole}{L}\times \frac{40\, g}{mole}\times \frac{1000\, mg}{g} = 17\, \frac{mg}{L}}$\\
+
+\vspace{0.2in}
+
+\item  Precipitation--Dissolution of Iron Hydroxide\\
+
+\begin{align*}
+\cee{FeOH_3 &<=>[K_{sp}] [Fe^{3+}] + [OH^{-}]} 
+\end{align*}
+
+pK$_{sp} = 38.57$
+
+\begin{equation*}
+\mathrm{K_{sp} = [Fe^{3+}][OH^{-}]^3=  10^{-38.57}}
+\end{equation*}\\
+
+Equilibrium measures end-point of reaction, so need to use final iron concentration:\\
+
+$\mathrm{[Fe^{3+}] = 0.2\, \frac{mg}{L}}$\\
+
+\begin{equation*}
+\mathrm{[Fe^{3+}] = 0.2\, \frac{mg}{L}\times \frac{1\, g}{1000\, mg} \times \frac{1\, mole}{56\, g} = 3.6 \times 10^{-6}\, \frac{mole}{L}}
+\end{equation*}
+
+\begin{equation*}
+\mathrm{[OH^-] = (\frac{K_{sp}}{[Fe^{3+}]})^{\sfrac{1}{3}} = (\frac{10^{-38.57}}{3.6\time 10^{-6}})^{\sfrac{1}{3}} = 9.1\times 10^{-12}\, \frac{mole}{L}} 
+\end{equation*}
+
+\begin{equation*}
+\mathrm{[H^+] = \frac{10^{-14}}{[OH^-]} = \frac{10^{-14}}{9.1\times 10^{-12}} = 0.001}
+\end{equation*}
+
+\begin{equation*}
+\mathrm{pH = -log(H^+) = 2.96}
+\end{equation*}
+
+\vspace{0.2in}
+
+\item Calculate alkalinity in mg/L as CaCO$_3$:\\
+
+\begin{equation*}
+\mathrm{[HCO_3^{-}] = 111 \frac{mg}{L}\times \frac{1\, mole}{61\, g}\times \frac{1\, g}{1000\, mg}\times \frac{1\, eq}{mole} = 1.8\times 10^{-3}\, \frac{eq}{L}\, of \, alkalinity}
+\end{equation*}
+
+\begin{equation*}
+\mathrm{[CO_3^{2-}] = 17 \frac{mg}{L}\times \frac{1\, mole}{60\, g}\times \frac{1\, g}{1000\, mg}\times \frac{1\, eq}{mole} = 5.7\times 10^{-4}\, \frac{eq}{L}\, of \, alkalinity}
+\end{equation*}\\
+
+Approximate Alkalinity (eq/L) = $\mathrm{1.8\times 10^{-3} + 5.7\times 10^{-4}\ = 2.4\times 10^{-3}\, \frac{eq}{L}}$\\
+
+Approximate Alkalinity (eq/L) = $\mathrm{2.4\times 10^{-3}\, \frac{eq}{L} \times \frac{100\, g\, CaCO_3}{mole}\times \frac{1\, mole}{2\, eq} = 119\, \frac{mg}{L}}$\\
+
+\vspace{0.2in}
+
+\item Acid-Base Equilibrium for HOCl in drinking water.\\
+Calculate fraction of HOCl that is in the dissociatead form:
+
+\begin{align*}
+\cee{[HOCl]_{aq} &<=>[K_{a}] [H^{+}]_{aq} + [OCl^{-}]_{aq}} 
+\end{align*}\\
+
+pka = 7.5
+
+$\mathrm{K_a} = 10^{-7.5}$
+
+Since it's drinking water, assume pH = 7.
+
+$\mathrm{H^+} = 10^{-7}$
+
+\begin{equation*}
+\mathrm{K_a = \frac{[H^+][OCl^-]}{[HOCl]} = 10^{-7.5}}
+\end{equation*}\\
+
+Rearrange equation, and substitute values for K$_a$ and H$^+$:\\
+
+\begin{equation*}
+\mathrm{\frac{[OCl^-]}{[HOCl]} = \frac{10^{-7.5}}{10^{-7}}}
+\end{equation*}\\
+
+\begin{equation*}
+\mathrm{[OCl^-] = 10^{-0.5}\times [HOCl] = 0.316[HOCl]}
+\end{equation*}\\
+
+\begin{equation*}
+\mathrm{Fraction Dissociated = \frac{[HOCl]}{[HOCl] + [OCl^-} = \frac{[HOCl]}{[HOCl] + 0.316[HOCl]} = \frac{1}{1+ 0.316} = 0.76}
+\end{equation*}
+
+
+\vspace{0.2in}
+
+\item Atrazine
+
+
+
+
+\item Oil Spill nineteen years ago:\\
+
 $\mathrm{C_0 = 400\, \frac{mg}{L}}$
 $\mathrm{C \, after\, 19 y = 400\, \frac{mg}{L}}$
 \begin{enumerate}
@@ -74,6 +211,8 @@ Solve for k = 20 t$_{-1}$, and substitute k into the integrated zero rate equati
 \begin{equation*}
 \mathrm{C = C_0 -20\, year^{-1}\times 20 \, year = 0}
 \end{equation*}\\
+
+
 
 Answer: Yes the engineer is correct if the degradation rate is zero order.
 
@@ -115,14 +254,19 @@ Use k and solve for the time it will take for C = 1 $\mathrm{\frac{mg}{kg}}$, as
 \mathrm{t = \frac{\frac{1}{C}-\frac{1}{C_0}}{k} = \frac{(\frac{1}{1}-\frac{1}{400})\, \frac{kg}{mg}}{0.003\, \frac{kg}{mg\times y}} = 333\, y}
 \end{equation*}\\
 
-In conclusion the ``worst-case scenario'' is second order, in which case, it would take 333 y for the pollutant to degrade.  However, first order is more likely.
-
-
-
-
-
-
+In conclusion the ``worst-case scenario'' is second order, in which case, it would take 333 y for the pollutant to degrade.  However, first order is more likely.\\
 \end{enumerate}
-\item blah blah
+\vspace{0.2in}
+\item Landfill
+\vspace{0.2in}
+\item Zamboni
+
+
+
+
+
+
+
+
 \end{enumerate}
 \end{document}
