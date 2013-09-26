@@ -1,0 +1,74 @@
+\documentclass[12pt,letterpaper]{article}
+%\documentstyle[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+%\usepackage{tabularx,ragged2e,booktabs,caption}
+%\newcolumntype{C}[1]{>{\Centering}m{#1}}
+%\renewcommand\tabularxcolumn[1]{C{#1}}
+%\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{subcaption} 
+\usepackage{caption}
+\usepackage[left=2cm,right=2cm,top=1cm,bottom=2cm]{geometry}
+%\usepackage{siunitx}
+
+
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+
+\frenchspacing
+
+% Default margins are too wide all the way around. I reset them here
+%\setlength{\topmargin}{-.5in}
+%\setlength{\textheight}{9in}
+%\setlength{\oddsidemargin}{.125in}
+%\setlength{\evensidemargin}{.125in}
+\setlength{\textwidth}{6.25in}
+
+\title {\Large{\textbf{Completely Mixed Flow Reactors}}\\ \large{CENG 340--Introduction to Environmental Engineering\\
+Instructor: Deborah Sills\\ \textbf{In Class: September 25, 2013}}}
+
+\author {}
+\date {}
+\maketitle
+
+\vspace{-1.5cm}
+
+\section *{Steps for Solving Mass Balance Problems in Completely Mixed Flow Reactors (CMFRs)}
+\textbf{(Modified from \emph{Environmental Engineering} by Mihelcic and Zimmerman)}\\
+The most difficult part of solving mass balance problems in CMFRs arise from uncertainty of the location of the control volume boundaries, and uncertainty of values of the individual terms in the mass balance equation (e.g., $\mathrm{Q_{out}}$, $\mathrm{\dot{m}_{rxn}}$).  The following steps will hopefully help solve mass balance problems:
+
+\begin{enumerate}
+\item Draw a diagram, identify the control volume and all of the influent and effluent flows.  All mass flows must cross the control volume and it should be reasonable to assume the control volume is well mixed.  (Remember that the significance of ``completely mixed'' is that\\ C$_{\mathrm{out}}$ = C$_{\mathrm{in\, the\, reactor}}$.)
+\item Write the mass balance equation in general form:
+
+\begin{equation*}
+\mathrm{\frac{dm}{dt} = \dot{m}_{in} - \dot{m}_{out} + \dot{m}_{rxn}}
+\end{equation*}
+
+\item Determine whether the problem is at steady state ($\mathrm{\frac{dm}{dt} = 0}$) or nonsteady state ($\mathrm{\frac{dm}{dt} = V\times \frac{dC}{dt}}$).
+\item Determine whether the compound being balanced is conservative ($\mathrm{\dot{m}_{rxn} = 0}$) or nonconservative.  If the compound is nonconservative, then $\mathrm{\dot{m}_{rxn}}$ must be determined based on reaction kinetics as follows:
+
+\begin{equation*}
+\mathrm{\dot{m}_{rxn} = V\times (\frac{dC}{dt})_{reaction\,  only}}
+\end{equation*}
+
+\item Substitute known or required values for each of the terms in the mass balance equation.
+
+\item Solve the problem.  You'll need to solve differential equations for nonsteady-state problems and algebraic equations for steady-state problems.
+
+\end{enumerate}
+
+\section *{Examples of Mass Balance Problems for CMFRs}
+Go through the examples in Section 4.1.3 of the textbook (pp.113--120).  There are four examples and we've done (including today) two in class.
+
+\end{document}

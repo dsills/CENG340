@@ -1,0 +1,128 @@
+\documentclass[12pt,letterpaper]{article}
+%\documentstyle[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+%%For Table perhaps%%
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+%\newcolumntype{C}[1]{>{\Centering}m{#1}}
+\renewcommand\tabularxcolumn[1]{C{#1}}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{subcaption} 
+\usepackage{caption}
+\usepackage[colorlinks]{hyperref}
+\usepackage[svgnames]{xcolor}
+\hypersetup{citecolor=DeepPink4}
+\hypersetup{linkcolor=DarkRed}
+\hypersetup{urlcolor=DarkBlue}
+\usepackage{cleveref}
+\usepackage{enumerate}
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+\frenchspacing
+
+\title {Problem Set 3---Key} 
+\author {CENG 340--Introduction to Environmental Engineering\\
+Instructor: Deborah Sills}
+\date {September 17, 2013}
+\maketitle
+
+\section *{Due Date}
+Wednesday 25 September, in class.
+\section *{Learning Goals}
+\begin{enumerate}
+\item Write and apply equilibrium equations to acid-base, precipitation-dissolution, and and sorption reactions.
+\item Apply kinetic equations to determine reaction times.
+\item Use the law of conservation of mass to write and apply a mass balance expression.
+\end{enumerate}
+
+
+\section *{Questions}
+\begin{enumerate}
+\item 
+$\mathrm{C_0 = 400\, \frac{mg}{L}}$
+$\mathrm{C \, after\, 19 y = 400\, \frac{mg}{L}}$
+\begin{enumerate}
+
+\item Try a zero order rate equation:
+\begin{equation*}
+\mathrm{\frac{dC}{dt} = -k}
+\end{equation*}\\
+
+After integration:\\
+
+\begin{equation*}
+\mathrm{C = C_0 -kt}
+\end{equation*}
+
+where C$_0$ = 400 $\mathrm{\frac{mg}{g}}$\\
+C = 20 $\mathrm{\frac{mg}{g}}$\\
+t = 19 year\\
+
+Solve for k = 20 t$_{-1}$, and substitute k into the integrated zero rate equation above to obtain\\
+
+\begin{equation*}
+\mathrm{C = C_0 -20\, year^{-1}\times 20 \, year = 0}
+\end{equation*}\\
+
+Answer: Yes the engineer is correct if the degradation rate is zero order.
+
+\item To find the ``worst-case scenario,'' calculate the concentration of the pollutant after twenty years using a first order and second order rate equation.\\
+
+\textbf{First Order:}\\
+
+\begin{equation*}
+\mathrm{C = C_0\times e^{-kt}}
+\end{equation*}\\
+
+Solve for k:\\
+
+\begin{equation*}
+\mathrm{k = -\frac{ln\frac{C}{C_0}}{t} = -\frac{ln\frac{20}{400}}{19\, y} = 0.16 \, y^{-1}}
+\end{equation*}\\
+
+Use k and solve for the time it will take to for C = 1 $\mathrm{\frac{mg}{kg}}$, assuming first-order kinetics:\\
+
+\begin{equation*}
+\mathrm{t = -\frac{ln\frac{C}{C_0}}{k} = -\frac{ln\frac{1}{400}}{0.16\, year^{-1}} = 37 \, y}
+\end{equation*}\\
+
+\textbf{Second Order:}\\
+
+\begin{equation*}
+\mathrm{C = \frac{C_0}{1 + C_0kt}}
+\end{equation*}\\
+
+Rearrange and solve for k:
+
+\begin{equation*}
+\mathrm{k = \frac{\frac{1}{C}-\frac{1}{C_0}}{t} = \frac{(\frac{1}{20}-\frac{1}{400})\, \frac{kg}{mg}}{19\, y} = 0.003\, \frac{kg}{mg\times y}}
+\end{equation*}\\
+
+Use k and solve for the time it will take for C = 1 $\mathrm{\frac{mg}{kg}}$, assuming second-order kinetics:\\
+
+\begin{equation*}
+\mathrm{t = \frac{\frac{1}{C}-\frac{1}{C_0}}{k} = \frac{(\frac{1}{1}-\frac{1}{400})\, \frac{kg}{mg}}{0.003\, \frac{kg}{mg\times y}} = 333\, y}
+\end{equation*}\\
+
+In conclusion the ``worst-case scenario'' is second order, in which case, it would take 333 y for the pollutant to degrade.  However, first order is more likely.
+
+
+
+
+
+
+\end{enumerate}
+\item blah blah
+\end{enumerate}
+\end{document}
