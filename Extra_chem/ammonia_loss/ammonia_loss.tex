@@ -1,0 +1,77 @@
+\documentclass[12pt,letterpaper]{article}
+%\documentstyle[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+%%For Table perhaps%%
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+%\newcolumntype{C}[1]{>{\Centering}m{#1}}
+\renewcommand\tabularxcolumn[1]{C{#1}}
+\usepackage[left=2cm,right=2cm,top=0.5cm,bottom=2cm]{geometry}
+\usepackage{subcaption} 
+\usepackage{caption}
+\usepackage[colorlinks]{hyperref}
+\usepackage[svgnames]{xcolor}
+\hypersetup{citecolor=DeepPink4}
+\hypersetup{linkcolor=DarkRed}
+\hypersetup{urlcolor=DarkBlue}
+\usepackage{cleveref}
+\usepackage{enumerate}
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+\frenchspacing
+
+\title {Ammonia---Acid-Base}
+\author {CENG 340--Introduction to Environmental Engineering\\
+Instructor: Deborah Sills\\September 30, 2013}
+\date {}
+\maketitle
+
+\section *{Introduction}
+Algae that contain high oil contents are being grown to produce renewable liquid fuel.  In addition to sunlight, photosynthetic algae require nutrients such as nitrogen and phosphorous.  On Friday, my research collaborators announced that they are considering feeding algae ammonia instead of nitrate (NO$_3^{2-}$) as a source of nitrogen, because ammonia is less expensive.  Note that algae can be grown in open ponds and in closed photobioreactors.
+
+
+\section *{Problem Statement}
+
+My collaborators asked me to estimate what percentage of total ammonia (NH$_4^+$ + NH$_3$) would be lost to the atmosphere if the open cultivation pond is operated at pH = 8, and pH = 7.\\
+
+Remember that total ammonia consists of two species: NH$_4^+$ (a weak acid or ``undissociated species'') and  NH$_3$ (its conjugate base or ``dissociated species''). The concentrations of NH$_4^+$ and NH$_3$ are related to each other through the following acid--base, equilibrium relationship:
+
+\begin{align*}
+\cee{[NH_4^+] &<=>[K_a] [NH_3] + [H^+]}
+\end{align*}
+
+where pK$_a$ = 9.3.\\
+
+In addition, NH$_3$ partitions between the water and gas phase, based on the following equilibrium relationship that's governed by Henry's Law.
+
+\begin{align*}
+\cee{[NH_3]_{aq} &<=>[K_H] [NH_3]_g}
+\end{align*}
+
+
+
+To estimate ammonia loss from open ponds:\\
+
+\begin{enumerate}
+
+\item  Calculate what fraction of total ammonia will be in the dissociated form at pH=7 and pH=8.
+
+\item  Calculate the fraction of ammonia NH$_3$ that partitions into the gas phase of a closed photo-bioreactor at pH=7.  Assume the reactor has a total volume of 25 m$^3$, with an air volume of 5 m$^3$ overlaying an aqueous volume of 20 m$^3$.  In addition assume that the aqueous concentration of total ammonia is 5 mg/L as N.
+
+
+
+
+\end{enumerate}
+
+\end{document}
