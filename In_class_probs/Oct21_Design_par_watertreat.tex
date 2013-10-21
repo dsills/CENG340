@@ -1,0 +1,89 @@
+\documentclass[11pt,letterpaper]{article}
+%\documentstyle[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+%\newcolumntype{C}[1]{>{\Centering}m{#1}}
+%\renewcommand\tabularxcolumn[1]{C{#1}}
+%\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{subcaption} 
+\usepackage{caption}
+\usepackage[left=2cm,right=2cm,top=1cm,bottom=2cm]{geometry}
+%\usepackage{siunitx}
+
+
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+
+\frenchspacing
+
+% Default margins are too wide all the way around. I reset them here
+%\setlength{\topmargin}{-.5in}
+%\setlength{\textheight}{9in}
+%\setlength{\oddsidemargin}{.125in}
+%\setlength{\evensidemargin}{.125in}
+\setlength{\textwidth}{6.25in}
+
+\title {\Large{\textbf{Water Treatment Unit Operations---Design Paramters}}\\ \large{To be used as part of PSet6\\CENG 340--Introduction to Environmental Engineering\\
+Instructor: Deborah Sills\\ \textbf{In Class: 21 October, 2013}}}
+
+\author {}
+\date {}
+\maketitle
+
+\vspace{-2cm}
+\subsection *{Introduction}
+You have been asked to design a water treatment facility to meet the following criteria:
+
+\begin{itemize}
+\item Design capacity = 3.25 MGD
+\item Source is river water with an initial turbidity of 10 NTU, an alkalinity concentration of 50 mg/L, at 10 $^0$C, with dynamic viscosity of $\mathrm{1.307 \times 10^{-3}\, \frac{N\times s}{m^2}}$ and pH = 7.
+\item Unit operations: coagulation (rapid mix), flocculation, sedimentation, rapid sand filtration, disinfection
+\item Additional constraints: units must be sized according to acceptable ranges.  Design must accommodate maintenance and repair.\\
+\end{itemize}
+
+\vspace{-0.2in}
+
+\subsection *{Approach}
+\begin{enumerate}
+\item Identify contaminants to be removed
+\item Prepare a block-flow diagram of necessary unit operations, in proper order
+\item Complete a conceptual design of each unit operation
+\end{enumerate}
+
+\vspace{0.2in}
+
+
+\begin{minipage}{\linewidth}
+\centering
+\captionof{table}{\textbf{Typical values used in design of water treatment systems} (adapted from our textbook).} \label{tab:title}
+
+\begin{tabular}{|p{50mm}|p{70mm}|p{30mm}|}\toprule[1.25pt]
+\bf Unit Operation	& \bf Design Basis 	& \bf Calculate	\\\midrule
+Coagulation--rapid-mix tank	& $\mathrm{\theta =}$ 1--2 min \newline $\bar{G}$ = 600--1000 s$^{-1}$ \newline Coagulant type & Volume \newline Number of tanks \newline Mixing Power (P) \newline Coagulant dose \newline Alkalinity req'd\\ \hline\
+
+Flocculation Tank 	& $\mathrm{\theta =}$ 10--30 min \newline $\bar{G}$ = 20--50 s$^{-1}$ (horiz. paddle) \newline $\bar{G}$ = 10--80 s$^{-1}$ (vertical shaft)	& Volume \newline Number of tanks \newline Mixing power (P)\\ \hline\
+
+Sedimentation tanks & $\mathrm{\theta =}$ 2--4 h \newline OFR = 700--1400 gpd/ft$^2$ \newline Weir loading rate = 20,000 gpd/ft & Area \newline Volume \newline Number of tanks \newline Weir length\\ \hline\
+
+Filtration (rapid sand) & Hyd. loading rate = 2--6 gpm/ft$^2$ \newline Depth = 2--6 ft & Area \newline Volume \newline Number of filters\\ \hline\
+
+Chlorination & $\mathrm{\theta_{min} =}$ 15 min (at peak hourly flow) \newline $\mathrm{\theta_{min} =}$ 30 min (at average hourly flow) & Volume \newline Chlorine dose\\ 
+
+
+\bottomrule[1.25pt]
+
+\end {tabular}\par
+\end{minipage}\\
+
+\end{document}
