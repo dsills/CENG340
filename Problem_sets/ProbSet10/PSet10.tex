@@ -1,0 +1,155 @@
+\documentclass[12pt,letterpaper]{article}
+%\documentstyle[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+%%For Table perhaps%%
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\newcolumntype{C}[1]{>{\Centering}m{#1}}
+\renewcommand\tabularxcolumn[1]{C{#1}}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{subcaption} 
+\usepackage{caption}
+\usepackage[colorlinks]{hyperref}
+\usepackage[svgnames]{xcolor}
+\hypersetup{citecolor=DeepPink4}
+\hypersetup{linkcolor=DarkRed}
+\hypersetup{urlcolor=DarkBlue}
+\usepackage{cleveref}
+\usepackage{enumerate}
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+\frenchspacing
+
+
+\title {\Large{\textbf{Problem Set 10}}\\ \large{CENG 340--Introduction to Environmental Engineering\\
+Instructor: Deborah Sills\\ \textbf{December 2, 2013}}}
+
+\author {}
+\date {}
+\maketitle
+
+\vspace{-1in}
+\section *{Due Date and Grading}
+Monday, December 9th, by 5pm.\
+
+
+
+\section *{Learning Objectives}
+\begin{enumerate}
+\item Be familiar with the basic design options for ecological sanitation (ECOSAN) latrines.
+\item Integrate mass balances with the Monod Model (for microbial growth kinetics) to develop design equations for biological wastewater treatment reactors.
+\item Relate solids retention time (SRT), food-to-microorganism ratio, sludge wasting, and microbial growth kinetics to the design and operation of biological treatment reactors.
+\end{enumerate}
+
+\section *{Relevant Reading}
+
+\begin{enumerate}
+\item Ecosan Technical Handbook (link included as part of Problem 1):\\ http://www.wateraid.org/~/media/Publications/construction-ecological-sanitation-latrine-technical-handbook.pdf
+
+\item Textbook: pp. 475--489
+\end{enumerate}
+
+
+
+ 
+
+\section *{Problems}
+\begin{enumerate}
+
+\item \emph{(20 pts)} \textbf{Ecological Sanitaion (Ecosan) Latrines}:
+Read the following \href{http://www.wateraid.org/~/media/Publications/construction-ecological-sanitation-latrine-technical-handbook.pdf}{Technical Handbook} on construction of Ecosan Latrines published by \emph{Water Aid}, and propose a design recommendation to an under-served community.  Your design recommendation should include three sections:
+
+\begin{enumerate}
+\item A \emph{brief} introduction (no more than one paragraph) to Ecosan and why you recommend this technology.
+\item A \emph{brief} (no more than one paragraph) rationale as to why you recommend a specific Ecosan system---one of the urine diversion systems (single or double vault), or a composting latrine (may include urine diversion or not; may be single or dual chamber).
+\item A \emph{brief} (no more than one paragraph) description of the latrine design and how the latrine works.
+\item A \emph{brief} (no more than one paragraph) list of operating and maintenance procedures required for the latrine to function properly, and how you propose to ensure the latrine is maintained appropriately.
+\end{enumerate}
+
+
+
+
+\item \emph{(14 pts)} \textbf{Microbial Growth Kinetics---Batch Reactor}\\
+
+Assume:\\
+
+A batch reactor with Q = 0\\
+
+%k = 10 $\mathrm{\frac{mg \, BOD_u}{mg\, X\times day}}$\\
+%
+%Y = 0.65 $\mathrm{\frac{mg \, X}{mg\, BOD_u}}$\\
+
+$\mu_{max}$ = 6.5 day$^{-1}$\\
+
+K$_s$ = 35 $\mathrm{\frac{mg \, BOD_u}{L}}$\\
+
+k$_d$ = 0.10 day$^{-1}$
+ 
+\begin{enumerate}
+\item If the food supply is unlimited and large (promoting exponential growth), and the initial concentration of bacteria is 0.25 $\mathrm{\frac{mg \,X}{L}}$, then what will be the biomass concentration, X, (in mg cells/L) at the end of three days? \emph{Answer: 5.5$\times 10^7\,\, \frac{mg\, cells}{L}$}
+ 
+\item Bacteria multiply by binary fission, doubling their number with each new generation. Calculate the ``generation time'' (in days) for this system (i.e., the length of time it takes for the population to double). \emph{Answer: 2.6 hours}
+
+\end{enumerate}
+
+\item \emph{(14 pts)} \textbf{Microbial Growth Kinetics---CMFR}\\
+Assume that the BOD removal rate can be described by the following equation that is first order with respect to both cell concentration (X) and BOD concentration (S):
+
+\begin{align}
+\mathrm{-\frac{dS}{dt} = kXS}
+\end{align}
+where: k = a first-order, growth-rate constant (day$^{-1}$). Also, assume that cell growth rate is directly proportional to the rate of BOD removal: 
+
+\begin{align}
+\mathrm{\frac{dX}{dt} = -Y\frac{dS}{dt}}
+\end{align}
+
+where: Y = yield coefficient $\mathrm{\left(\frac{mg \,\, cells}{mg \, \, BOD \, \, consumed}\right)}$. And assume that cell death is first order with respect to cell concentration: 
+
+
+\begin{align}
+\mathrm{\frac{dX}{dt} = -k_dX}
+\end{align}
+
+
+where: k$_d$ = a first-order, decay-rate constant (day$^{-1}$).\\
+
+Derive an equation to predict the steady state effluent BOD concentration (S) from a CMFR if: S$_0$ = influent BOD concentration (mg/L); Q = influent flow rate (L/day);
+V = CMFR reactor volume (L); X$_0$= influent cell concentration = zero; and the CMFR has no recycle flow.
+
+\item \emph{(14 pts)}
+\begin{enumerate}
+
+\item A waste is to be treated aerobically in a CMFR with no recycle. Determine the critical SRT ($\theta_{cmin}$) using the following constants:\\
+
+$\mu_{max}$ = 4.2 day$^{-1}$\\
+ 
+K$_s$ = 40 mg/L\\
+
+k$_d$ = 0.1 day$^{-1}$\\
+ 
+The input waste concentration, S$_0$, is 200 mg/L BOD$_u$.\\
+\emph{Answer: 7.1 hours}
+ 
+\item Assuming that the design SRT ($\theta_c$ value) must be at least 20$\times \theta_{cmin}$ to provide a safety factor against wash out of cells, calculate the effluent substrate concentration, S.  \emph{Answer: 2.75 mg/L}
+\end{enumerate}
+
+\item \emph{(10 pts)} Textbook: 11.6 \emph{Answer: 656 kg/day}
+\item \emph{(14 pts)}Textbook: 11.7  \emph{Answers: a: $4.2\times 10^6$ L; b: 2.9 hour; c: 4515 kg/day; e: 0.97 $\mathrm{\frac{lb\, BOD_5}{lb\, MLVSS\times day}}$; f: 4 days}
+
+\item \emph{(14 pts)} Textbook: 11.16.  \textbf{Assume that MLVSS = 0.6 of MLSS.}\\
+\emph{Answer: 0.33 $\mathrm{\frac{lb\, BOD_5}{lb\, MLVSS\times day}}$}
+
+\end{enumerate}
+\end{document}
