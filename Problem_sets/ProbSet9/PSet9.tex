@@ -1,0 +1,159 @@
+\documentclass[12pt,letterpaper]{article}
+%\documentstyle[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+%%For Table perhaps%%
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\newcolumntype{C}[1]{>{\Centering}m{#1}}
+\renewcommand\tabularxcolumn[1]{C{#1}}
+\usepackage[left=2cm,right=2cm,top=1cm,bottom=1cm]{geometry}
+\usepackage{subcaption} 
+\usepackage{caption}
+\usepackage[colorlinks]{hyperref}
+\usepackage[svgnames]{xcolor}
+\hypersetup{citecolor=DeepPink4}
+\hypersetup{linkcolor=DarkRed}
+\hypersetup{urlcolor=DarkBlue}
+\usepackage{cleveref}
+\usepackage{enumerate}
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+\frenchspacing
+
+
+\title {\Large{\textbf{Problem Set 9}}\\ \large{CENG 340--Introduction to Environmental Engineering\\
+Instructor: Deborah Sills\\ \textbf{November 20, 2013}}}
+
+\author {}
+\date {}
+\maketitle
+
+\vspace{-1in}
+\section *{Due Date and Grading}
+Monday, 25 November, in class. Since this assignment is much shorter than a usual problem set, it will be worth 25\% of a regular problem set.  Note that I will do something similar with PSet 1, which will wind up being worth half of a regular problem set.\\
+
+With respect to the short-essay question on cultural competency, I will grade your response with the same rubric I used for your blog posts:
+
+\begin{minipage}{\linewidth}
+\centering
+%\captionof{table}{Description of the model parameters} \label{tab:title}
+
+\begin{tabular}{|c|p{14cm}|l|c|}\toprule[1.25pt]
+\bf Rating	& \bf Characteristics\\\midrule
+4	& \emph{Exceptional.} The response is clear, concise, and easy to follow. The writer integrates examples from the text with his own independent insights, and she considers alternate views when appropriate. The post demonstrates that the writer is deeply engaged with the topic.\\ \hline
+
+3	& \emph{Good.} The response is reasonably clear, concise, and easy to follow. The writer's explanations are mostly based on examples or other evidence, and although independent insights are presented they are not fully developed. The post demonstrates that the writer is moderately engaged with the topic.\\ \hline
+
+2	& \emph{Underdeveloped.} The response is mostly a description or a summary. The writer does not present new insights or alternate views, nor does she make connections between ideas. The post demonstrates that the writer is barely engaged with the topic.\\ \hline
+
+1	& \emph{Limited.} The response is unfocused, difficult to follow, and demonstrates that the writer is not engaged with the topic.\\ \hline
+
+0	& \emph{No Credit.} A blog post was not submitted, or it consists of one or two disconnected sentences.\\ \hline
+
+\bottomrule[1.25pt]
+
+\end {tabular}\par
+\end{minipage}\\
+
+
+\section *{Learning Objectives}
+\begin{enumerate}
+\item Consider and discuss ethnocentrism and what it means to be culturally competent within the context of Rose George's book, \emph{The Big Necessity}.
+\item Fit kinetic data from a biological treatment reactor to the Monod Model.
+\end{enumerate}
+ 
+
+\section *{Two Problems}
+
+\begin{enumerate}
+
+
+\item \emph{(12.5 pts)} \textbf{\large{Monod Kinetics}}\\
+A kinetic study of the bacterial utilization of methanol was conducted and yielded the following data:\\
+
+\begin{minipage}{\linewidth}
+\centering
+\begin{tabular}{|c|c|}\toprule[1.25pt]
+\bf Substrate, S (mg/L)	& \bf dS/dt ($\mathrm{\frac{mg}{L\times hr}}$)	\\\midrule
+2	& 1\\ \hline\
+4	& 1.5\\ \hline\
+6	& 1.8\\ \hline\
+8	& 2\\ \hline\
+10 & 2.14\\
+\bottomrule[1.25pt]
+
+\end {tabular}\par
+\end{minipage}\\
+
+S = concentration of methanol.\\
+
+In addition, biomass concentration (bacterial concentration, X) was maintained at a constant 100 mg/L during the study. 
+
+\begin{enumerate}
+
+
+
+\item From this data, determine the parameters for a Monod substrate utilization model, presented below. (Hint: Use the non-linear curve fitting package in Kaleidagraph to determine $\mu_{max}$ and K$_s$.  Don't try to determine X with your model fit; instead input X as the value given in the problem statement.) \emph{(Answers: $\mu_{max}$ = 0.03; Ks = 4 mg/L)}.\\
+
+\begin{align*}
+\mathrm{\frac{dS}{dt} = -\frac{\mu_{max}XS}{K_s + S}}
+\end{align*}
+
+
+\item This model can be used to predict the concentration of methanol in a well-mixed pond that has an indigenous bacteria population close to that used in the kinetic study above.The concentration of the bacteria in the pond is, however, 10\% of that of the kinetic study, and this bacterial concentration is relatively constant in the pond.\\
+
+Determine the methanol concentration in the pond 5 days after the pond was contaminated with 200 mg/L of methanol. Assume the pond behaves as a batch reactor (no inflow/outflow) and that no methanol escapes by evaporation. Hint: employ the ``diphasic'' or ``mixed-order'' Monod model \emph{(Answer: 164 mg/L)}.
+
+\end{enumerate}
+
+\item \emph{(12.5 pts)}  \textbf{\large{Cultural competency}}\\
+
+\emph{\large{Introduction}}\\
+In some ways, Rose George ``took us around global south'' in her book \emph{The Big Necessity}, but only from the very narrow perspective of sanitation, or lack thereof. Over the semester, you've commented on her stories, and, overall, I was happy with the level of your engagement.  It was only after Rose George's ``visit'' a few weeks ago that I realized how many of us (me and Rose George included) were responding to the 2.5-billion-with-no-sanitation problem in an ethnocentric manner.
+
+According the the Merriam Webster dictionary, ethnocentric behavior is ``characterized by or based on the attitude that one's own group is superior.'' 
+
+As an example of our ethnocentric approach to sanitation, consider the issue of open defecation.  Open defecation is not an easy subject to talk about.  Clearly it's better to use some form of improved sanitation; however, we must be careful in how we judge those that don't ---even those who practice open defecation.  Before passing judgment, we should probably be asking ourselves how the custom of open defecation developed and why it persists. As you work on this assignment think about other ethnocentric aspects of your own thoughts and actions, or how you've been affected by ethnocentric behaviors of others.\\
+
+\emph{\large{Rationale}}\\
+Some of you may work in other countries or in large engineering firms with people from different parts of the world. In addition, if we're interested in developing new and appropriate technologies for water and wastewater treatment, we must develop our cultural competency to do so.  I'd argue that to be successful in the present global and connected world, being aware of other culture's customs, and knowing how to talk about sensitive issues in a non-ethnocentric manner is as important as knowing how to do engineering calculations.\\
+
+ 
+
+
+%But most of the success stories that George presented included local advocates---from blabh blah in South Africa to xx in blah India.  This combined with shows that if well-meaning government and non-government agencies, and engineers want to improve access to sanitation (and drinking water for that matter), they must work as partners with local communities.  In addition, since sanitation and going to the bathroom is such a private and touchy topic, if you are an engineer from a different culture, you must learn about local customs and find a way to discuss these.  In other words, we shouldn't leave our reading of this book without at least touching on the concept of cultural competency.
+
+\emph{\large{Assignment}}\\
+On Monday, after you take a short quiz, we will spend most of lecture discussing issues related to cultural competency and ethnocentrism that came out of Rose George's book and the course blog.  To prepare for this discussion, please compose a short piece (less than 300 words) that addresses one or more of the following prompts.  Alternatively, you may discuss other topics related to the issues I raised in the Introduction and Rationale sections above.
+
+\begin{enumerate}
+\item What kind of questions do we need to ask ourselves when we hear about a custom that, from American perspective (or the perspective of wherever you're from), seems unbelievably bad---e.g., open defecation, sex before marriage, no sex before marriage?  Should we judge people who practice these customs (or other customs you wish to discuss), and wonder how they can live this way? Or should we be asking ourselves how different customs developed and why they persist? Or perhaps a combination of both. 
+
+\item How do you imagine interacting with a community that's asked you to design a sanitation system?  Think about what you need to learn to be successful in your endeavors.  You may want to refer back to Chapter 8 (Open-Defecation-Free India in \emph{The Big Necessity}, and consider the successes and failures that George described.
+
+\item What experiences have you had where you've been judged for your culture, based on generalizations and stereotypes.  If you're American, what do you think about the fact that many people in other parts of the world consider us ignorant, not well-traveled, uneducated (most of us only speak one language), stupid, and wasteful (I've heard it all).  How does that compare to ways you've generalized about people from countries in Asia and Africa, for example. 
+\end{enumerate}
+
+
+
+
+%One important issue that may come up for you is how to talk to people from other cultures.  One of our problems, as Americans, is that we have a difficult time understanding why things are done differently in other cultures.  \\
+%
+%For example, a number of students questioned why people resort to open defecation in India
+%
+
+
+
+\end{enumerate}
+\end{document}

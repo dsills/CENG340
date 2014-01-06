@@ -1,0 +1,89 @@
+\documentclass[12pt,letterpaper]{article}
+%\documentstyle[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+%%For Table perhaps%%
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\newcolumntype{C}[1]{>{\Centering}m{#1}}
+\renewcommand\tabularxcolumn[1]{C{#1}}
+\usepackage[left=2cm,right=2cm,top=1cm,bottom=1cm]{geometry}
+\usepackage{subcaption} 
+\usepackage{caption}
+\usepackage[colorlinks]{hyperref}
+\usepackage[svgnames]{xcolor}
+\hypersetup{citecolor=DeepPink4}
+\hypersetup{linkcolor=DarkRed}
+\hypersetup{urlcolor=DarkBlue}
+\usepackage{cleveref}
+\usepackage{enumerate}
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+\frenchspacing
+
+
+\title {\Large{\textbf{Problem Set 8}}\\ \large{CENG 340--Introduction to Environmental Engineering\\
+Instructor: Deborah Sills\\ \textbf{November 6, 2013}}}
+
+\author {}
+\date {}
+\maketitle
+
+\vspace{-1in}
+
+
+
+
+\section *{Due Date}
+Friday, 15 November, by 5pm.  Bring assignments to my office, or bring them to class on Friday morning.  I'll leave an envelope taped to my door, in case I'm not in my office.
+
+\section *{Learning Goals}
+\begin{enumerate}
+
+\item Analyze and evaluate results from BOD tests and theoretical oxygen demand calculations.
+\item Apply mass balances and reactor modeling principles to model oxygen demand in the environment.
+\item Apply mass balance to evaluate the impact of dewatering on the volume of sludge disposed at a wastewater treatment plant.
+\item Describe how food webs, bioaccumulation, and bioconcentration contribute to mercury accumulation in humans. 
+
+\end{enumerate}
+
+\section *{Relevant Sections in the Book}
+4.1 (mass balances) and 5.4 (oxygen demand); 5.3.2, 5.3.3, and 5.6 (foodwebs and bioaccumulation)
+
+\section *{Problems}
+\begin{enumerate}
+
+
+\item \emph{(12 pt)} \textbf{BOD} The organic concentration in a water sample, measured as BOD is 4 mg/L.  If the BOD reaction rate is 0.3 day$^{-1}$, what will be the concentration of organic matter remaining at the end of 5 days?  How much oxygen will be used in this period to oxidize the waste? \emph{(Answer: 0.9 mg/L BOD remaining; 3.1 mg/L O$_2$ consumed)}
+ 
+\item \emph{(12 pt)}  \textbf{BOD Approximation} A water sample has a BOD$_5$ of 10 mg/L. The sample was diluted by ten with dilution water and put in a BOD bottle.    Initial dissolved oxygen concentration in the BOD bottle was 8 mg/L.  The sample also contained 2 mg/L NH$_3$-N (before dilution).  Assume the sample was typical domestic sewage (i.e., assume that BOD$_5$ = $\frac{2}{3}$BOD$_U$, or that k = 0.2-0.3 day$^{-1}$).  If the bottle was left sealed for a very long time what was the final DO in the BOD bottle? \emph{(Answer: Values between 5 and 6 mg/L are acceptable.)}
+
+
+\item \emph{(14 pt)} \textbf{Review your reactor modeling skills} For modeling purposes we need to determine the BOD decay rate for a river.  An experiment was conducted in which two sample were taken from the river at two points separated by a distance of 1 kilometer, and 5-day BOD tests were conducted with both samples in the laboratory.  The sample drawn from Point A (upstream) has a BOD$_5$ = 7.2 mg/L.  The sample drawn from Point B (downstream) has a BOD$_5$ = 3.9 mg/L.  The river exhibits plug flow behavior (i.e., can be modeled as a plug flow reactor), has an average cross-sectional area of 10 m$^2$, and a volumetric flow rate of 100 $\mathrm{\frac{m^3}{h}}$   Determine the “river” BOD decay rate, k$\mathrm{_r}$. \emph{(Answer: 0.147 day$^{-1}$)}
+
+
+\item \emph{(12 pt)} \textbf{Temperature Effects} A BOD test is performed on an undiluted sample at 20 $^0$C and 35 $^0$C.  BOD$_5$ at 20 $^0$C was 4.15 mg/L.  BOD$_5$ at 35 $^0$C was 6.56 mg/L.  From this data determine the BOD$_U$ of the sample.  Assume that nitrification was inhibited and that the temperature correction factor ($\theta$) equals 1.05.
+
+\item \emph{(12 pt)} \textbf{Review your mass balance skills} The town of Pittsburgh discharges 0.126 $\mathrm{\frac{m^3}{s}}$ of treated wastewater into Cherry Creek.  The BOD$_5$ of the wastewater is 34 $\mathrm{\frac{mg}{L}}$.  Cherry Creek has a 10-year, 7-day low flow of 0.126 $\mathrm{\frac{m^3}{s}}$.  Upstream of the the wastewater outfall from Pittsburgh, the BOD$_5$ is 1.2 mg/L.  The BOD rate constants \emph{k} are 0.222 d$^{-1}$ and 0.090 d$^{-1}$ for the wastewater and the creek, respectively.  The temperature of both the creek and the municipal wastewater is 20 $^0$C. Calculate the initial ultimate BOD (L$_0$) after mixing. \emph{(answer:27 mg/L)}
+
+\item \emph{(14 pt)} \textbf{Review your mass balance skills} A meat processing wastewater containing 2100 $\mathrm{\frac{g}{m^3}}$ BOD$_5$ (at 20 $^0$C test conditions) is to be discharged to a stream.  The minimum stream flow rate (95 $\mathrm{\frac{m^3}{s}}$) occurs in January when the water temperature is 6 $^0$C and maximum temperature occurs in July (26$^0$C) when the flow rate is 175 $\mathrm{\frac{m^3}{s}}$.  If the maximum in-stream BOD$_5$  value is to be 0.5 $\mathrm{\frac{g}{m^3}}$ at ambient temperatures, determine the necessary extent of treatment (i.e. the required \% removal of BOD) for a wastewater flow of 0.2 $\mathrm{\frac{m^3}{s}}$.  Assume the reaction rate constant is 0.2 d$^{-1}$ at 20$^0$C and the temperature coefficient $\theta$ is equal to 1.05.  You may assume the upstream BOD$\mathrm{_u}$ is negligible. \emph{(answer:Necessary treatment required: 82\% BOD removal)}
+
+\item \emph{(12 pt)} \textbf{Review your mass balance skills---sludge dewatering at Milton} The Milton WWTP used to thicken their sludge with gravity settling followed by dissolved air flotation (DAF) only.  Assume that this resulted in 33 $\mathrm{\frac{m^3}{day}}$ of sludge with a suspended solids concentration of 3.8 percent.  Recently they added a belt filter press (that follows settling and DAF).  The filter press produces a sludge with a solids concentration of 24 percent.  What annual volume savings of sludge have they achieved? \emph{(answer:about 10,000 m$^3$)}
+
+\item \emph{(12 pt)} \textbf{Ecosystems, trophic states, and foodwebs}
+Read Sections 5.3.2 and 5.3.3 (pp.186--190) and Section 5.6 (pp. 204--210) in the textbook on ecosystems and prepare a complete food chain diagram (starting with primary producers) that illustrates bio-concentration and bio-accumulation of mercury in humans that consume tuna. \textbf{less than 300 words}
+
+\item \emph{(Extra Credit 10 pt)} \textbf{Write an Exam Question} Compose a challenging and thoughtful question on drinking water treatment for the next midterm exam.
+
+\end{enumerate}
+\end{document}

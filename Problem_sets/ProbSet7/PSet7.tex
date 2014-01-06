@@ -1,0 +1,175 @@
+\documentclass[12pt,letterpaper]{article}
+%\documentstyle[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+%%For Table perhaps%%
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\newcolumntype{C}[1]{>{\Centering}m{#1}}
+\renewcommand\tabularxcolumn[1]{C{#1}}
+\usepackage[left=2cm,right=2cm,top=1cm,bottom=1cm]{geometry}
+\usepackage{subcaption} 
+\usepackage{caption}
+\usepackage[colorlinks]{hyperref}
+\usepackage[svgnames]{xcolor}
+\hypersetup{citecolor=DeepPink4}
+\hypersetup{linkcolor=DarkRed}
+\hypersetup{urlcolor=DarkBlue}
+\usepackage{cleveref}
+\usepackage{enumerate}
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+\frenchspacing
+
+
+\title {\Large{\textbf{Problem Set 7}}\\ \large{CENG 340--Introduction to Environmental Engineering\\
+Instructor: Deborah Sills\\ \textbf{October 29, 2013}}}
+
+\author {}
+\date {}
+\maketitle
+
+\vspace{-1in}
+\section *{Due Date}
+Friday, 8 November, by 5pm.  Bring assignments to my office, or bring them to class on Friday morning.  I'll leave an envelope taped to my door, in case I'm not in my office.
+
+\section *{Learning Goals}
+\begin{enumerate}
+\item Calculate percent removal of particles during sedimentation, assuming Type I settling behavior.
+\item Apply empirical design principles to size a rapid sand filter.
+\item Apply principals of acid-base equilibria to evaluate the effect of pH on disinfection with free chlorine.
+\item Calculate biological oxygen demand (BOD) and nitrogenous oxygen demand (NBOD) for organic waste  streams.
+\end{enumerate}
+
+\section *{Relevant Sections in the Book}
+10.7,10.9, 3.7.2, and 5.4 (for questions on oxygen demand)
+
+
+\begin{enumerate}
+\item \emph{(8 pts)} \textbf{Know the Jargon}
+ Define pathogen, SDWA, MCL, MCLG, VOC, SOC, DOM, DBP, and THM.
+
+\item \emph{(14 pts)} \textbf{Type I Sedimentation}
+\begin{enumerate}
+\item If the settling velocity of a particle is 0.30 cm/s, and the overflow rate of a horizontal clarifier is 0.25 cm/s, what percent of particles are retained in the clarifier? 
+\item If the flow rate of the water treatment plant is doubled, what percent removal of particles would be expected.
+\end{enumerate}
+
+\item \emph{(14 pts)} \textbf{FE Formatted Question---Filtration}\\Determine the number of rapid-sand filters to treat a flow rate of $\mathrm{75.7\times 10^3\, \frac{m^3}{d}}$ if the design [hydraulic] loading rate is 300 $\mathrm{\frac{m3}{d\times m^2}}$.  The maximum dimension is 7.5 m, and the length to width ratio is 1.2:1.
+
+\begin{enumerate}
+\item 4 filters
+\item 3 filters
+\item 6 filters
+\item 5 filters
+\end{enumerate}
+Show your work even though you wouldn't have to for the FE.
+
+\item \emph{(8 points)} \textbf{Disinfection}\\
+A contact tank that uses 2 mg/L of free chlorine for disinfection was designed to achieve a 3-log inactivation of \emph{Giardia} cysts at T= 10 $^0$C, and pH = 6.0.  The upstream treatment process is scheduled to change, and the water entering the contact tank will have a pH of 7.  
+
+\begin{enumerate}
+\item Using Table 1, describe (with numbers) how this change in pH will affect the required CT for the contact tank? 
+\item Describe three ways the water treatment plant can accommodate this change in pH?
+\end{enumerate}
+
+\vspace{0.3in}
+
+\begin{minipage}{\linewidth}
+\centering
+\captionof{table}{\textbf{CT values (in $\mathrm{\frac{mg\times min}{L}}$) for a 3-log inactivation of \emph{Giardia} cysts by free chlorine at 10 $^0$C} (adapted from EPA, 1991).} \label{tab:title}
+
+%\begin{minipage}{\linewidth}
+%\centering
+%\captionof{table}{\textbf{CT values (in $\mathrm{\frac{mg\times min}{L}}$) for a 3-log inactivation of \emph{Giardia} cysts by free chlorine at 10 $^0$C (adapted from Davis and Cornwell).} \label{tab:title}
+
+\begin{tabular}{|c|c|c|}\toprule[1.25pt]
+\bf Chlorine Concentration (mg/L)	& \bf pH = 6 	& \bf pH = 7	\\\midrule
+1.8	& 86 & 122 \\ \hline\
+
+2.0	& 87 & 124 \\ \hline\
+
+2.2	& 89 & 127 \\ \hline\
+
+2.4	& 90 & 129 \\ \hline\
+
+2.6	& 92 & 131 \\ 
+
+
+\bottomrule[1.25pt]
+
+\end {tabular}\par
+\end{minipage}\\
+
+\vspace{0.3in}
+
+
+\item \emph{(14 points)} \textbf{Effect of pH on chlorine dose during disinfection}\\
+When Cl$_2$ gas is added to water during the disinfection of drinking water, it hydrolyzes water to form hypochlorous acid, HOCl, a weak acid (Eq.1). 
+
+\begin{align}
+\cee{Cl_{2(gas)}\,  \rightarrow \, HOCl \, + \,  HCl}
+\end{align}
+
+
+In addition, hypochlorous acid exists in equilibrium with its conjugate base, hypochlorite (OCl$^-$), as shown in Eq.2. The pK$\mathrm{_a}$ for HOCl is 7.5. 
+
+\begin{align*}
+\cee{[HOCl]  &<=>[K_{a}] [OCl^-] + [H^+]}
+\end{align*}
+
+The disinfection power of HOCl is about 90 times higher than its conjugate base OCl$^-$. If a disinfection process requires an HOCl dose of 10 mg/L, what is the required dose of chlorine gas (Cl$\mathrm{_{2(g)}}$) for
+\begin{enumerate}
+\item a source water with pH = 7.5
+\item a source water with pH = 6.5
+\end{enumerate}
+
+\textbf{Note that the dose of HOCl required (10 mg/L) refers to the concentration of the undissociated form of hypochlorous acid at equilibrium (Eq.2).} \emph{Answer: 27 mg/L; 14 mg/L}  
+
+
+\item \emph{(14 points)} \textbf{Biological oxygen demand} Human wastewater contains about 0.2 lbs of oxygen consuming material per day per person.  Assuming that the town of Lewisburg (population approximately 6,000) discharged its domestic waste directly (without treatment) into a lake with a volume of $2.4\times 10^{11}$ gallons and initial dissolved oxygen concentration of 8.5 mg/L.How long would it take to utilize all of the oxygen in the lake. Assume that there is no photosynthetic oxygen production nor any atmospheric reaeration.  Also assume that the oxygen concentration is uniform throughout the lake. \emph{Answer: 39 years}
+
+\item \emph{(14 points)} \textbf{Biological oxygen demand}\\
+Problem 5.10 on p.212 of our textbook. \emph{Answer: 129 mg/L O$_2$; 229 mg/L O$_2$}
+
+\item \emph{(14 points)} \textbf{Nitrogenous Oxygen Demand}\\ If domestic sewage has an approximate formulation of C$_{10}$H$_{19}$O$_3$N, estimate the NBOD
+(nitrogenous biological oxygen demand) of a sample, which contains 100 mg/L of domestic sewage    
+as CBOD, or carbonaceous biological oxygen demand. Assume complete biodegradability of the sewage. \emph{Answer: 16 mg/L O$_2$}
+
+%\item \emph{(12 points)} \textbf{BOD Kinetics} The concentration organic matter in a water sample, measured as BOD$\mathrm{_L}$, is 4 mg/L.  If the BOD reaction rate coefficient, k, is 0.3 day$^{-1}$, what will be the concentration of organic matter remaining at the end of 5 days (L$\mathrm{_t}$)?  How much oxygen will be used in this period to oxidize the waste  (y$\mathrm{_t}$)? \emph{Answer: 3.1 mg/L O$_2$ consumed}
+
+
+\end{enumerate}
+
+
+  
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

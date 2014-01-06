@@ -1,0 +1,128 @@
+\documentclass[11pt,letterpaper]{article}
+%\documentstyle[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version = 3]{mhchem}
+\usepackage{chemstyle}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+%\newcolumntype{C}[1]{>{\Centering}m{#1}}
+%\renewcommand\tabularxcolumn[1]{C{#1}}
+%\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{subcaption} 
+\usepackage{caption}
+\usepackage[left=2cm,right=2cm,top=1cm,bottom=2cm]{geometry}
+%\usepackage{siunitx}
+
+
+
+\begin{document}
+\setlength{\parindent}{0cm} 
+
+
+
+\frenchspacing
+
+% Default margins are too wide all the way around. I reset them here
+%\setlength{\topmargin}{-.5in}
+%\setlength{\textheight}{9in}
+%\setlength{\oddsidemargin}{.125in}
+%\setlength{\evensidemargin}{.125in}
+\setlength{\textwidth}{6.25in}
+
+\title {\Large{\textbf{Problem Set 6}}\\ \large{More Water Treatment\\CENG 340--Introduction to Environmental Engineering\\
+Instructor: Deborah Sills\\ \textbf{23 October, 2013}}}
+
+\author {}
+\date {}
+\maketitle
+
+\vspace{-2cm}
+
+\subsection *{Due Date:} Wednesday, 30 October, by 5pm.  Bring assignments to my office, or bring them to class on Wednesday morning.  I'll leave an envelope taped to my door, in case I'm not in my office.
+
+\subsection *{Learning Goals:}
+\begin{enumerate}
+\item Apply water treatment design parameters to size the unit processes used for coagulation, flocculation, sedimentation, filtration, and disinfection.
+
+\item Be familiar with U.N. Millennium Goal Seven, and report the progress (or lack of progress) made by one developing country in reaching this goal.
+\end{enumerate}
+
+\subsection *{Problems:}
+\begin{enumerate}
+
+\item \textbf{Conceptual Design of Water Treatment Plant}\\
+
+
+You have been asked to design a water treatment facility to meet the following criteria:
+
+\begin{itemize}
+\item Design capacity = 3.25 MGD
+\item Source is river water with an initial turbidity of 10 NTU, an alkalinity concentration of 50 mg/L, at 10 $^0$C, with dynamic viscosity of $\mathrm{1.307 \times 10^{-3}\, \frac{N\times s}{m^2}}$ and pH = 7.
+\item Unit operations: coagulation (rapid mix), flocculation, sedimentation, rapid sand filtration, and disinfection, based on the design parameters presented in Table 1.
+\item Additional constraints: units must be sized according to acceptable ranges (see Table 1).  Design must accommodate maintenance and repair.
+\item Complete the design according to the following sequence:
+\vspace{0.2in}
+
+\begin{enumerate}
+\item \emph{(14 pts)} \emph{\textbf{Coagulation.}}  Optimal alum dose was determined to be 35 mg/L.  Calculate tons of alum and and tons of alkalinity (in units of as CaCO3)---if needed---required per year. Determine the size of mixing tanks, and power of mixing motors.  State the number of tanks, and mixers in service and on site.  Note that if you use a fiberglass reinforced plastic tank, you do not need a spare.
+
+\item \emph{(14 pts)} \emph{\textbf{Flocculation.}}   Use tanks with triple sections in series, with one horizontal paddle mixer in each section, and allow for one tank to be out of service. Determine size of flocculation tanks, and power of mixing motors.  State the number of tanks, and mixers in service and on site. 
+
+\item \emph{(14 pts)} \emph{\textbf{Sedimentation.}}  Determine the size and number of tanks on site.  Allow for one tank to be out of service.  Note that common length-to-width ratios for settling are between 2:1 and 5:1, lengths seldom exceed 100 m, and a minimum of two tanks is always provided.  You do not need to design the weir boxes for this assignment.
+
+\item\emph{(14 pts)} \emph{\textbf{Rapid Sand Filtration.}} Determine size and number of filters on-site.  Allow for one filter to be out of service.  Assume that the duration of backwash is eight hours---this means that the design should allow for 2 filters to be out of service.
+
+\item \emph{(14 pts)} \emph{\textbf{Disinfection.}} Determine the size and number of contact tanks, reactor type, and chlorine dose to maintain 2 mg/L residual with 40\% on-site consumption due to oxidation and side reactions.  Design should allow for one contact tank to be out of service.
+\item \emph{(4 pts)} Prepare a block-flow diagram of necessary unit operations, in proper order
+ 
+\end{enumerate}
+
+\end{itemize}
+
+
+\vspace{0.2in}
+
+
+\begin{minipage}{\linewidth}
+\centering
+\captionof{table}{\textbf{Typical values used in design of water treatment systems} (adapted from our textbook).} \label{tab:title}
+
+\begin{tabular}{|p{50mm}|p{70mm}|p{30mm}|}\toprule[1.25pt]
+\bf Unit Operation	& \bf Design Basis 	& \bf Calculate	\\\midrule
+Coagulation--rapid-mix tank	& $\mathrm{\theta =}$ 1--2 min \newline $\bar{G}$ = 600--1000 s$^{-1}$ \newline Coagulant type & Volume \newline Number of tanks \newline Mixing Power (P) \newline Coagulant dose \newline Alkalinity req'd\\ \hline\
+
+Flocculation Tanks 	& $\mathrm{\theta =}$ 10--30 min \newline $\bar{G}$ = 20--50 s$^{-1}$ (horiz. paddle) \newline $\bar{G}$ = 10--80 s$^{-1}$ (vertical shaft)	& Volume \newline Number of tanks \newline Mixing power (P)\\ \hline\
+
+Sedimentation Tanks & $\mathrm{\theta =}$ 2--4 h \newline OFR = 700--1400 gpd/ft$^2$ \newline Weir loading rate = 20,000 gpd/ft & Area \newline Volume \newline Number of tanks \newline Weir length\\ \hline\
+
+Filtration (Rapid Sand) & Hyd. loading rate = 2--6 gpm/ft$^2$ \newline Depth = 2--6 ft & Area \newline Volume \newline Number of filters\\ \hline\
+
+Chlorination & $\mathrm{\theta_{min} =}$ 15 min (at peak hourly flow) \newline $\mathrm{\theta_{min} =}$ 30 min (at average hourly flow) & Volume \newline Chlorine dose\\ 
+
+
+\bottomrule[1.25pt]
+
+\end {tabular}\par
+\end{minipage}\\
+
+\vspace{1in}
+
+
+\item \emph{(12 pts)} \emph{Adapted from Davis and Cornwall} Disinfection
+\begin{enumerate}
+\item What is the equivalent percent reduction for a 2.5 log reduction of \emph{Giardia lambia}? 
+
+\item What is the log reduction that is equivalent to 99.96 percent reduction?
+\end{enumerate}
+
+\item \emph{(14 pts)} \emph{Adapted from 10.19 in the textbook}\\
+Look up the Millennium Development Goals (MDGs) at the United Nations website,\\ www.un.org/millenniumgoals.  MDG 7 states that by 2015 (only two years from now) the number of people without access to an improved water supply will decrease by one half.  Select one developing country and briefly discuss its progress in meeting the UN's Millennium Development Goal 7, in terms of the number of people still not served by an improved water supply.  Make sure you define (in one or two sentences) the meaning of the phrase "improved water supply."
+
+\end{enumerate}
+
+\end{document}
